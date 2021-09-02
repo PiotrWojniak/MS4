@@ -266,5 +266,5 @@ Walidated on Herroku app
 ---
 # ***Credits***
 1. 404 templates and CSS style was made by Colorlib (https://colorlib.com)
-2. Home background image Zdjęcie przez formularz PxHere
+2. Home background image downloaded from PxHere
 
