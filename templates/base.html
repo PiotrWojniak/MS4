@@ -16,8 +16,9 @@
 
         {% block corecss %}
             <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-            <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+            <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"-->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
             <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% endblock %}
@@ -54,9 +55,10 @@
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <!-- Logo container -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <!-- h2 class="logo-font text-black my-0"><strong>Family</strong>Craft</h2 -->
-                        <img src="/media/Family_Craft.jpeg" height="75" width="75" alt="Brand-logo">
+                    <a href="{% url 'home' %}" class="nav-link main-logo-link logo-font text-black my-0">
+                        <!--h2 class="logo-font text-black my-0"><strong>Family</strong>Craft</h2-->
+                        <img src="/media/Family_Craft.jpeg" height="50" width="50" alt="Brand-logo">
+                        Family Craft
                     </a>
                 </div>
                 <!--Serching container-->
@@ -147,4 +149,5 @@
         {% endblock %}
 
     </body>
+    <footer></footer>
 </html>
