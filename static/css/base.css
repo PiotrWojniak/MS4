@@ -10,6 +10,11 @@ body {
     font-family: 'Lato';
 }
 
+.home-page {
+    margin-top: auto !important;
+    margin-bottom: 3rem;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -58,6 +63,16 @@ body {
 
 .bg-color {
     background: #000 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background:#ffca84;
+	z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
