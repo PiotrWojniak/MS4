@@ -71,11 +71,20 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background:#ffca84;
+	background:#df9a5e;
 	z-index: -1;
 }
 
-/* -------------------------------- Media Queries */
+/* background color on product details  */
+.details {
+    background: #b0d4af !important;
+}
+
+.navbar {
+    flex-wrap: unset;
+}
+
+/* ----------------- Media Queries ---------------------*/
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -84,7 +93,7 @@ body {
   }
 }
 
-/* fixed top navbar only on medium and up */
+/* fixed top navbar on medium screen and above */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -96,5 +105,26 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
+@media (max-width: 441px) {
+    .header-container {
+        padding-top: 150px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
