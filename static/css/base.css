@@ -75,13 +75,22 @@ body {
 	z-index: -1;
 }
 
+a.category-bar > span.badge:hover {
+    background: #2C462B !important;
+    color: #fff !important;
+}
+
+hr {
+    border-top: 1px solid white;
+}
+
 /* background color on product details  */
 .details {
     background: #b0d4af !important;
 }
 
 .navbar {
-    flex-wrap: unset;
+    padding: .5rem .5rem;
 }
 
 /* ----------------- Media Queries ---------------------*/
