@@ -11,8 +11,10 @@ class ProductAdmin(admin.ModelAdmin):
         'rating',
         'image',
     )
+
     # sorting product by SKU
     ordering = ('sku',)
+
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
