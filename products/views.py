@@ -48,13 +48,13 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
-    sorting = f'{sort}_{direction}'
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'sorting': sorting,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)
