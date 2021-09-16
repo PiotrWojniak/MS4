@@ -73,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',  # 'allauth' need this from django
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'bag.contexts.bag_contents',  # allow access to the bag from all apps and views
             ],
         },
     },
@@ -153,6 +154,11 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Calculating delivery cost
+FREE_SHIPPING_THRESHOLD = 80
+STANDARD_SHIPPING_PRECENTAGE = 10
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
