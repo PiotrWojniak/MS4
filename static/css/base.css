@@ -38,6 +38,7 @@ body {
     min-width: 260px;
 }
 
+/* main button */
 .btn-fc {
     background:#2C462B;
     color: #F57200;
@@ -51,6 +52,41 @@ body {
 .btn-fc:focus {
     background: #F57200;
     color: #2C462B;
+}
+
+/* Keep shopping button */
+.btn-fc-out {
+    color: #F57200 !important;
+    border: 1px solid #2C462B;
+}
+
+.btn-fc-out:hover,
+.btn-fc-out:active,
+.btn-fc-out:focus {
+    background: #F57200;
+    color: #2C462B !important;
+}
+
+/* Back to top button */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-color: #2C462B !important;
+}
+
+.btt-link {
+    cursor: pointer;
+    color: #2C462B;
+}
+
+.btt-link:active,
+.btt-link:hover,
+.btt-link:focus {
+    background:#2C462B;
+    color: #F57200;
 }
 
 .text-black {
@@ -80,7 +116,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background:#df9a5e;
+	background:#f8d1af;
 	z-index: -1;
 }
 
@@ -95,33 +131,11 @@ hr {
 
 /* background color on product details  */
 .details {
-    background: #b0d4af !important;
+    background: #b7d3b6 !important;
 }
 
 .navbar {
     padding: .5rem .5rem;
-}
-
-/* Back to top button */
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    border-color: #2C462B !important;
-}
-
-.btt-link {
-    cursor: pointer;
-    color: #2C462B;
-}
-
-.btt-link:active,
-.btt-link:hover,
-.btt-link:focus {
-    background:#2C462B;
-    color: #F57200;
 }
 
 /* ----------------- Media Queries ---------------------*/
