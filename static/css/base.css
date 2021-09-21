@@ -77,11 +77,14 @@ body {
     border-color: #2C462B !important;
 }
 
-.btt-link,
-.update-link,
-.remove-link {
+.btt-link {
+    color: #2C462B;
     cursor: pointer;
-    color: #2C462B !important;
+}
+
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 .btt-link:active,

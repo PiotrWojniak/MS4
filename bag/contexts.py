@@ -48,7 +48,7 @@ def bag_contents(request):
     # Calculating bag total
     grand_total = delivery + total
 
-    # everything in this context will be available in every template and app across the entire project
+    # everything in context is available in all template and app in this project
     context = {
         'bag_items': bag_items,
         'total': total,
