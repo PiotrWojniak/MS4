@@ -24,7 +24,7 @@ class OrderForm(forms.ModelForm):
             'street_address2': 'Street Address 2',
             'postcode': 'Postal Code',
             'town_or_city': 'Town or City',
-            'country': 'Country',
+            'county': 'County, State or Locality'
         }
         # used from the admin, signals & form part 2 lesson
         self.fields['full_name'].widget.attrs['autofocus'] = True
