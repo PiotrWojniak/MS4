@@ -36,6 +36,17 @@
     right: .5rem;
 }
 
+/* Grayed out country field is not selected */
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
 /* spinner when payment is in process*/
 
 #loading-overlay {

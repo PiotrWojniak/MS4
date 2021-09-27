@@ -24,7 +24,6 @@ class OrderForm(forms.ModelForm):
             'street_address2': 'Street Address 2',
             'postcode': 'Postal Code',
             'town_or_city': 'Town or City',
-            'county': 'County, State or Locality',
             'country': 'Country',
         }
         # used from the admin, signals & form part 2 lesson
