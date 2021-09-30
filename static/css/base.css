@@ -137,9 +137,13 @@ hr {
 }
 
 /* search box placeholder */
-
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: rgb(44, 70, 43, 0.5);
+}
+
+/* to overide default box shadow */
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgb(44 70 43 / 50%) !important;
 }
 
 /* background color on product details  */
@@ -348,4 +352,5 @@ input[name='q']::placeholder {
         width: 32px;
         bottom: 20px;
         right: 7px;
+    }
 }
