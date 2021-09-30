@@ -163,8 +163,8 @@ input[name='q']::placeholder {
     font-size: 25px;
     font-family: Lobster;
     background: -webkit-linear-gradient(#F57200, #244723);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 /* CSS Triangle  */
