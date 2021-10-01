@@ -70,8 +70,9 @@
                         </div>
                     </form>
                 </div>
+                <!-- Profile and Bag -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                    <ul class="list-inline list-unstyled text-center float-righ text-lg-end my-0">
+                    <ul class="list-inline list-unstyled text-center float-right text-lg-end my-0">
                         <!-- user account -->
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -83,7 +84,7 @@
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">Product Management</a>
+                                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                     {% endif %}
                                     <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
