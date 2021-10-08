@@ -406,9 +406,9 @@ span.gradient {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-fc-out.rounded-0.btn-lg,
-    .btn.btn-fc.rounded-0.btn-lg,
-    .btn.shop-now-button.rounded-3.btn-lg {
+    .btn.btn-fc-out.rounded-0.btn-sm,
+    .btn.btn-fc.rounded-0.btn-sm,
+    .btn.shop-now-button.rounded-3.btn-sm {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -431,7 +431,7 @@ span.gradient {
     .btt-button {
         height: 32px;
         width: 32px;
-        bottom: 20px;
+        bottom: 10px;
         right: 7px;
     }
 }
