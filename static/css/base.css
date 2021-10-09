@@ -159,9 +159,10 @@ input[name='q']::placeholder {
 /* ---------- from CSS-tricks.com ---------- */
 
 /* font and background changed for project match */ 
-.gradient {
+.gradient,
+.dropdown-item {
     font-family: Lobster;
-    background: -webkit-linear-gradient(#F57200, #244723);
+    background: -webkit-linear-gradient(#ff7700, #144912);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -335,11 +336,19 @@ span.gradient {
 
 /* -------------- Media Queries ----------------- */
 
+/* Adjust bag cards on screen larger then 1700px */
+@media (min-width: 1700px) {
+    .bag-cards {
+        max-width: 300px;
+        height: auto;
+    }
+}
+
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 70%;
+    }
 }
 
 /* fixed top navbar on medium screen and above */
@@ -393,45 +402,47 @@ span.gradient {
         font-size: 1.5rem;
     }
 
-    .btt-button {
-        height: 32px;
-        width: 32px;
-        bottom: 20px;
-        right: 7px;
-    }
-
     .btn.btn-fc-out.rounded-0,
     .btn.btn-fc.rounded-0,
     .shop-now-button.rounded-3 {
         padding: .375rem .375rem;
     }
-
+    
     .btn.btn-fc-out.rounded-0.btn-sm,
     .btn.btn-fc.rounded-0.btn-sm,
     .btn.shop-now-button.rounded-3.btn-sm {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
-
+    
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
-
+    
     .dropdown-item {
         padding: 0.25rem 0.75rem;
     }
-}
 
- @media (max-width: 441px) {
-    body {
-        height: calc(100vh - 116px);
-    }
-
-    /* slightly change position and size btt button on small screen */
+    /* slightly change position and size Back-To-Top button on small screen */
     .btt-button {
         height: 32px;
         width: 32px;
         bottom: 10px;
-        right: 7px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 441px) {
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+/* slightly change size for keep shopping/secure checkout buttons and icon for small devices */
+@media (max-width: 383px) {
+    .mobile {
+        width: 8rem;
+    }
+    .icon {
+        display: none;
     }
 }
