@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/craft-homemade.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(48, 48, 48, 0.527),rgba(0, 0, 0, 0.5)), url('/media/craft-homemade.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -36,6 +36,10 @@ body {
     color: #000 !important;
 }
 
+.text-fc-org {
+    color: #ff7700bf
+}
+
 .text-fc {
     color:#2C462B !important;
 }
@@ -45,7 +49,7 @@ body {
 }
 
 .bg-color {
-    background: #000 !important;
+    background: #2C462B !important;
 }
 
 .custom-select {
@@ -70,6 +74,28 @@ a.category-bar > span.badge:hover {
 
 hr {
     border-top: 1px solid white;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-family: Lobster;
+    background: #2C462B;
+    text-shadow: 0 0 3px #F57200;
+}
+
+.slogan {
+    color: white !important;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.hover-fc:hover,
+.hover-fc:active {
+    color: #F57200 !important;
 }
 
 /* --------------- Buttons ------------- */
@@ -114,7 +140,7 @@ hr {
     height: 42px;
     width: 42px;
     position: fixed;
-    bottom: 10px;
+    bottom: 6rem;
     right: 10px;
     border-color: #2C462B !important;
 }
@@ -344,10 +370,14 @@ span.gradient {
     }
 }
 
-/* Slightly larger container on xl screens */
+/* Slightly larger container and snaller padding on xl screens */
 @media (min-width: 1200px) {
     .container {
         max-width: 70%;
+    }
+
+    .footer-container {
+        padding-top: 90px;
     }
 }
 
@@ -364,12 +394,24 @@ span.gradient {
     .header-container {
         padding-top: 164px;
     }
+
+    .footer-container {
+        padding-top: 90px;
+    }
 }
 
 /* pad the top when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
+    }
+
+    .footer-container {
+        padding-top: 90px;
+    }
+
+    .text-fc-org {
+        font-size: 2.5rem;
     }
 
     body {
@@ -422,27 +464,36 @@ span.gradient {
     .dropdown-item {
         padding: 0.25rem 0.75rem;
     }
-
-    /* slightly change position and size Back-To-Top button on small screen */
-    .btt-button {
-        height: 32px;
-        width: 32px;
-        bottom: 10px;
-        right: 5px;
-    }
 }
 
 @media (max-width: 441px) {
     body {
         height: calc(100vh - 116px);
     }
+
+    .text-fc-org {
+        font-size: 1.5rem;
+    }
+
+    .shop-now-button {
+        min-width: 150px;
+    }
+
+    .btt-button {
+        height: 32px;
+        width: 32px;
+        bottom: 7rem;
+        right: 5px;
+        font-size: 12px; 
+    }
+
+    .footer-container {
+        padding-top: 60px;
+    }
 }
 /* slightly change size for keep shopping/secure checkout buttons and icon for small devices */
 @media (max-width: 383px) {
     .mobile {
         width: 8rem;
-    }
-    .icon {
-        display: none;
     }
 }
