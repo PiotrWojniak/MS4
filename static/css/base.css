@@ -78,7 +78,7 @@ hr {
 
 /* ---------- Footer ---------- */
 
-footer {
+.footer-fc {
     bottom: 0;
     width: 100%;
     position: fixed;
@@ -94,7 +94,8 @@ footer {
 }
 
 .hover-fc:hover,
-.hover-fc:active {
+.hover-fc:active,
+.hover-fc:hover {
     color: #F57200 !important;
 }
 
@@ -495,5 +496,9 @@ span.gradient {
 @media (max-width: 383px) {
     .mobile {
         width: 8rem;
+    }
+
+    .icon {
+        display: none;
     }
 }
