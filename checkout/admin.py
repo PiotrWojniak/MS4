@@ -3,11 +3,19 @@ from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """
+    Allow to add and edit line items in the admin right from
+    inside the order model.
+    """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """
+    Add read only fields that will be calculated by our model methods.
+    So we don't want anyone to have the ability to edit them.
+    """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
