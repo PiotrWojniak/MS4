@@ -84,22 +84,29 @@ hr {
     position: fixed;
     font-family: Lobster;
     background: #2C462B;
-    text-shadow: 0 0 3px #F57200;
-}
-
-.slogan {
-    color: white !important;
+    text-shadow: 0 1px 3px #F57200;
     text-transform: capitalize;
     text-align: center;
+    color: white;
 }
 
-.hover-fc:hover,
-.hover-fc:active,
 .hover-fc:hover {
     color: #F57200 !important;
+    cursor: pointer;
 }
 
 /* --------------- Buttons ------------- */
+
+/* Buttons for contact form */
+.btn-fc-contact {
+    background: #ffffff;
+    color: #2C462B; 
+}
+
+.btn-fc-contact:hover {
+    background:#F57200;
+    color: #ffffff;
+}
 
 .shop-now-button {
     background:#2C462B;
@@ -114,26 +121,16 @@ hr {
 }
 
 .shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-fc:hover,
-.btn-fc:active,
-.btn-fc:focus {
+.btn-fc-out:hover {
     background: #F57200;
-    color: #2C462B;
+    color: #2C462B !important;
 }
 
 /* Keep shopping button */
 .btn-fc-out {
     color: #2C462B !important;
     border: 1px solid #2C462B ;
-}
-
-.btn-fc-out:hover,
-.btn-fc-out:active,
-.btn-fc-out:focus {
-    background: #F57200;
-    color: #2C462B !important;
 }
 
 /* Back to top button */
@@ -156,9 +153,7 @@ hr {
     cursor: pointer;
 }
 
-.btt-link:active,
-.btt-link:hover,
-.btt-link:focus {
+.btt-link:hover {
     background:#2C462B;
     color: #F57200;
 }
@@ -187,11 +182,24 @@ input[name='q']::placeholder {
 
 /* font and background changed for project match */ 
 .gradient,
-.dropdown-item {
+.dropdown-item:hover {
     font-family: Lobster;
-    background: -webkit-linear-gradient(#ff7700, #144912);
+    background: linear-gradient(to bottom, #ff7700, #144912);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.dropdown-item {
+    font-family: Lobster;
+    color:black;
+}
+
+.dropdown-item:hover {
+    text-decoration: underline;
+    color: #000;
+    position: relative;
+    z-index: 1;
 }
 
 span.gradient {
@@ -383,7 +391,20 @@ span.gradient {
 }
 
 /* fixed top navbar on medium screen and above */
-@media (min-width: 992px) {
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu,
+    .dropdown .dropdown-menu { 
+        display: none; 
+    }
+    .navbar .nav-item:hover .dropdown-menu,
+    .dropdown:hover .dropdown-menu { 
+        display: block; 
+    }
+    .navbar .nav-item .dropdown-menu,
+    .dropdown .dropdown-menu { 
+        margin-top:0; 
+    }
+
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -444,16 +465,13 @@ span.gradient {
     h2.gradient {
         font-size: 1.5rem;
     }
-
-    .btn.btn-fc-out.rounded-0,
-    .btn.btn-fc.rounded-0,
-    .shop-now-button.rounded-3 {
-        padding: .375rem .375rem;
-    }
     
     .btn.btn-fc-out.rounded-0.btn-sm,
     .btn.btn-fc.rounded-0.btn-sm,
-    .btn.shop-now-button.rounded-3.btn-sm {
+    .btn.shop-now-button.rounded-3.btn-sm,
+    .btn.btn-fc-out.rounded-0,
+    .btn.btn-fc.rounded-0,
+    .shop-now-button.rounded-3 {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
@@ -482,7 +500,7 @@ span.gradient {
 
     .btt-button {
         height: 32px;
-        width: 32px;
+        width: 30px;
         bottom: 7rem;
         right: 5px;
         font-size: 12px; 
@@ -492,10 +510,12 @@ span.gradient {
         padding-top: 60px;
     }
 }
-/* slightly change size for keep shopping/secure checkout buttons and icon for small devices */
+/* slightly change size for buttons and icon for small devices as Galaxy Fold */
 @media (max-width: 383px) {
     .mobile {
         width: 8rem;
+        font-size: small;
+        margin-top: 5px !important;
     }
 
     .icon {
