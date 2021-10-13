@@ -369,6 +369,8 @@ span.gradient {
     border-radius: 50%;
 }
 
+
+
 /* -------------- Media Queries ----------------- */
 
 /* Adjust bag cards on screen larger then 1700px */
@@ -377,6 +379,7 @@ span.gradient {
         max-width: 300px;
         height: auto;
     }
+
 }
 
 /* Slightly larger container and snaller padding on xl screens */
@@ -386,7 +389,7 @@ span.gradient {
     }
 
     .footer-container {
-        padding-top: 90px;
+        padding-top: 50px;
     }
 }
 
@@ -418,7 +421,7 @@ span.gradient {
     }
 
     .footer-container {
-        padding-top: 90px;
+        padding-top: 80px;
     }
 }
 
