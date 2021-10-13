@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+<!-- Contact -->
+{% block content %}
+<div class="container col-10"> 
+    <div class="row">
+        <div class="col-12 text-center mt-3">
+            <h2 class="logo-font gradient">Contact Us</h2>
+            <hr class="col-12 col-lg-6">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+            <form method="POST" action="{% url 'contact' %}" id="contact-form">
+                {% csrf_token %}
+                {% for field in form %}
+                    {{ field | as_crispy_field }}
+                {% endfor %}
+                <div class="text-center">
+                    <button class="btn btn-fc rounded-3" type="submit">Submit</button>
+                    <a class="btn btn-fc-contact rounded-3" href="{% url 'products' %}">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container footer-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock %}

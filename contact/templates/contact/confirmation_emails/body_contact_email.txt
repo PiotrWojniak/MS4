@@ -1,0 +1,14 @@
+Hi {{ instance.name }}!
+
+Thank you for getting in touch with us!
+
+We have received your message below.
+
+Subject:{{ instance.subject }}
+
+Massage:{{ instance.message }}
+
+We will respond to your message as soon as possible.
+
+Kind Regards
+Family Craft
