@@ -1,0 +1,16 @@
+.form-box-style,
+#id_name {
+    box-sizing: border-box !important;
+
+    padding: 10px 12px !important;
+    border: 1px solid transparent !important;
+    border-radius: 0px !important;
+    background-color: white !important;
+    box-shadow: 0 1px 3px 0 #6c748c !important;
+    -webkit-transition: box-shadow 150ms ease !important;
+    transition: box-shadow 150ms ease !important;
+}
+
+textarea {
+    height: 120px !important;
+}
