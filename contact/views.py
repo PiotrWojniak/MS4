@@ -14,11 +14,8 @@ def contact(request):
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             """Send the user a confirmation email"""
-            contact_form.save()
-            messages.info(request, 'Your message was submitted successfully. \
-                We will be in touch soon')
-            return redirect(reverse('products'))
 
+            contact_form.save()
             instance = contact_form.save()
 
             sender_email = instance.email
@@ -34,17 +31,20 @@ def contact(request):
                 body, settings.DEFAULT_FROM_EMAIL,
                 [sender_email]
             )
+            messages.info(request, 'Your message was submitted successfully. \
+                We will be in touch soon')
+            return redirect(reverse('products'))
         else:
             messages.error(
                 request,
                 'There was a problem with the form. \
                 Please resubmit')
+    else:
+        form = ContactForm()
 
-    form = ContactForm()
-
-    template = 'contact/contact.html'
     context = {
         'form': form,
         'on_contact_page': True
     }
+    template = 'contact/contact.html'
     return render(request, template, context)
