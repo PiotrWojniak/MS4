@@ -11,15 +11,15 @@ def contact(request):
     """A view to render the contact page"""
 
     if request.method == 'POST':
-
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            form.save()
+        contact_form = ContactForm(request.POST)
+        if contact_form.is_valid():
+            """Send the user a confirmation email"""
+            contact_form.save()
             messages.info(request, 'Your message was submitted successfully. \
                 We will be in touch soon')
             return redirect(reverse('products'))
 
-            instance = form.save()
+            instance = contact_form.save()
 
             sender_email = instance.email
             subject = render_to_string(
@@ -47,6 +47,4 @@ def contact(request):
         'form': form,
         'on_contact_page': True
     }
-
-    template = 'contact/contact.html'
     return render(request, template, context)
