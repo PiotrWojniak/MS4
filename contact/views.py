@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect, reverse
+"""Imports"""
+from django.shortcuts import render
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
-
 from .forms import ContactForm
 
 
@@ -11,12 +11,14 @@ def contact(request):
     """A view to render the contact page"""
 
     if request.method == 'POST':
-        contact_form = ContactForm(request.POST)
-        if contact_form.is_valid():
-            """Send the user a confirmation email"""
 
-            contact_form.save()
-            instance = contact_form.save()
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message was submitted successfully. \
+                We will be in touch soon')
+
+            instance = form.save()
 
             sender_email = instance.email
             subject = render_to_string(
@@ -31,20 +33,17 @@ def contact(request):
                 body, settings.DEFAULT_FROM_EMAIL,
                 [sender_email]
             )
-            messages.info(request, 'Your message was submitted successfully. \
-                We will be in touch soon')
-            return redirect(reverse('products'))
         else:
             messages.error(
-                request,
-                'There was a problem with the form. \
-                Please resubmit')
-    else:
-        form = ContactForm()
+                request, 'There was a problem with the form. \
+                Please try again')
 
+    form = ContactForm()
+
+    template = 'contact/contact.html'
     context = {
         'form': form,
         'on_contact_page': True
     }
-    template = 'contact/contact.html'
+
     return render(request, template, context)

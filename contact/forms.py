@@ -1,13 +1,13 @@
-"""Imports """
+"""Imports"""
 from django import forms
 from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
-    """ Contact Form model """
+    """ Form for Contact model """
     class Meta:
         model = Contact
-        fields = ('subject', 'name', 'email', 'message',)
+        fields = ['subject', 'name', 'email', 'message']
 
     def __init__(self, *args, **kwargs):
         """

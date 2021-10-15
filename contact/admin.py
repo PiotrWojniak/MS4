@@ -1,10 +1,10 @@
-"""Imports """
+"""Imports"""
 from django.contrib import admin
 from .models import Contact
 
 
 class ContactAdmin(admin.ModelAdmin):
-    """ Render Models to the Admin Backend View"""
+    """ Renders Models to the Admin Backend View"""
 
     list_display = (
         'date_sent',
@@ -18,7 +18,7 @@ class ContactAdmin(admin.ModelAdmin):
         'date_sent',
     )
 
-    ordering = ('-date_sent',)
+    ordering = ('date_sent',)
 
 
 admin.site.register(Contact, ContactAdmin)

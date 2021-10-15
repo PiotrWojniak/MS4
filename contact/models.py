@@ -1,12 +1,14 @@
+"""Imports"""
 from django.db import models
 
 
 SUBJECT_MENU = (
-    ('General query', 'GENERAL QUERY'),
-    ('Where is my order', 'WHERE IS MY ORDER?'),
-    ('Update my order', 'UPDATE MY ORDER'),
-    ('Return or exchange of my order', 'RETURN OR EXCHANGE OF MY ORDER'),
-    ('Complaint', 'COMPLAINT'),
+    ('general_query', 'GENERAL QUERY'),
+    ('sign_in_or_sign_up_issue', 'SIGN IN OR SING UP ISSUE'),
+    ('where_is_my_order', 'WHERE IS MY ORDER?'),
+    ('update_my_order', 'UPDATE MY ORDER'),
+    ('return_or_exchange_of_order', 'RETURN OR EXCHANGE OF ORDER'),
+    ('complaint', 'COMPLAINT'),
 )
 
 
