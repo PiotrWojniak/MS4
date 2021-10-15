@@ -7,7 +7,8 @@ SUBJECT_MENU = (
     ('sign_in_or_sign_up_issue', 'SIGN IN OR SING UP ISSUE'),
     ('where_is_my_order', 'WHERE IS MY ORDER?'),
     ('update_my_order', 'UPDATE MY ORDER'),
-    ('return_or_exchange_of_order', 'RETURN OR EXCHANGE OF ORDER'),
+    ('return_of_order', 'RETURN OF ORDER'),
+    ('cancel_of_order', 'CANCEL OF ORDER'),
     ('complaint', 'COMPLAINT'),
 )
 

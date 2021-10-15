@@ -2,11 +2,10 @@
 #id_name {
     box-sizing: border-box !important;
 
-    padding: 10px 12px !important;
     border: 1px solid transparent !important;
-    border-radius: 0px !important;
+    border-radius: 0.25rem !important;
     background-color: white !important;
-    box-shadow: 0 1px 3px 0 #6c748c !important;
+    box-shadow: 0 1px 3px 0 #8c7f6c !important;
     -webkit-transition: box-shadow 150ms ease !important;
     transition: box-shadow 150ms ease !important;
 }
