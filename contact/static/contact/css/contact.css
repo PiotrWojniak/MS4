@@ -1,7 +1,6 @@
-.contact-form-style,
-#id_name {
+.contact-form-style {
     box-sizing: border-box !important;
-
+    font-size: 0.9rem;
     border: 1px solid transparent !important;
     border-radius: 0.25rem !important;
     background-color: white !important;

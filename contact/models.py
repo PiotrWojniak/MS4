@@ -4,7 +4,7 @@ from django.db import models
 
 SUBJECT_MENU = (
     ('general_query', 'GENERAL QUERY'),
-    ('sign_in_or_sign_up_issue', 'SIGN IN OR SING UP ISSUE'),
+    ('sign_in_or_sign_up_issue', 'SIGN IN OR SIGN UP ISSUE'),
     ('where_is_my_order', 'WHERE IS MY ORDER?'),
     ('update_my_order', 'UPDATE MY ORDER'),
     ('return_of_order', 'RETURN OF ORDER'),

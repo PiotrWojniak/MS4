@@ -1,5 +1,5 @@
 """Imports"""
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
@@ -17,6 +17,7 @@ def contact(request):
             form.save()
             messages.success(request, 'Your message was submitted successfully. \
                 We will be in touch soon')
+            return redirect(reverse('home'))
 
             instance = form.save()
 
