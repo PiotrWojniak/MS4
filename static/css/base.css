@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(48, 48, 48, 0.527),rgba(0, 0, 0, 0.5)), url('/media/craft-homemade.avif') no-repeat center center fixed;
+    background: linear-gradient(rgba(48, 48, 48, 0.527),rgba(0, 0, 0, 0.5)), url('/media/craft-homemade.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
