@@ -153,24 +153,21 @@
 
         {% block page_footer %}
         {% endblock %}
-        <footer class="container-fluid fixed-bottom py-1 footer-fc slogan"> 
+        <footer class="container-fluid fixed-bottom py-2 footer-fc"> 
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- social links -->
                     <ul class="list-inline list-unstyled text-white mb-0">
-                        <li class="list-inline-item">
-                            <p>Contact us </p>
+                        <li class="list-inline-item text-white"><a href="{% url 'contact' %}" class="text-white">Contact us!
+                            <i class="far fa-envelope hover-fc text-white pl-1"></i></a>
                         </li>
-                        <li class="list-inline-item text-white"><a href="{% url 'contact' %}" target="blank">
-                            <i class="far fa-envelope hover-fc text-white"></i></a>
-                        </li>
-                        <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank">
+                        <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank" rel="noreferrer">
                             <i class="fab fa-facebook-f hover-fc text-white" id="facebook" title="Facebook"></i></a>
                         </li>
-                        <li class="list-inline-item "><a href="https://www.instagram.com" target="_blank">
+                        <li class="list-inline-item "><a href="https://www.instagram.com" target="_blank" rel="noreferrer">
                             <i class="fab fa-instagram hover-fc text-white" id="instagram" title="Instagram"></i></a>
                         </li>
-                        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank">
+                        <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank" rel="noreferrer">
                             <i class="fab fa-twitter hover-fc text-white" id="twitter" title="Twitter"></i></a></li>
                         </ul>
                     </div>

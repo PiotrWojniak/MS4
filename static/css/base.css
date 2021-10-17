@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(48, 48, 48, 0.527),rgba(0, 0, 0, 0.5)), url('/media/craft-homemade.jpeg') no-repeat center center fixed;
+    background: linear-gradient(rgba(48, 48, 48, 0.527),rgba(0, 0, 0, 0.5)), url('/media/craft-homemade.avif') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -37,7 +37,7 @@ body {
 }
 
 .text-fc-org {
-    color: #ff7700bf
+    color: #ff7700bf;
 }
 
 .text-fc {
@@ -93,12 +93,16 @@ hr {
     text-shadow: 0 1px 3px #F57200;
     text-transform: capitalize;
     text-align: center;
-    color: white;
+    color: white !important;
 }
 
 .hover-fc:hover {
     color: #F57200 !important;
     cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /* --------------- Buttons ------------- */
@@ -387,7 +391,6 @@ span.gradient {
         max-width: 300px;
         height: auto;
     }
-
 }
 
 /* Slightly larger container and smaller padding on xl screens */
@@ -406,15 +409,17 @@ span.gradient {
 }
 
 /* fixed top navbar on medium screen and above */
-@media all and (min-width: 992px) {
+@media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu,
     .dropdown .dropdown-menu { 
         display: none; 
     }
+
     .navbar .nav-item:hover .dropdown-menu,
     .dropdown:hover .dropdown-menu { 
         display: block; 
     }
+
     .navbar .nav-item .dropdown-menu,
     .dropdown .dropdown-menu { 
         margin-top:0; 
@@ -432,7 +437,6 @@ span.gradient {
     .footer-container {
         padding-top: 164px;
     }
-
 }
 
 /* pad the top when navbar is collapsed on mobile */
@@ -500,6 +504,11 @@ span.gradient {
     
     .dropdown-item {
         padding: 0.25rem 0.75rem;
+    }
+
+    .footer-fc {
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
     }
 }
 
