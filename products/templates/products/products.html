@@ -14,7 +14,7 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col text-center mt-md-3">
+            <div class="col text-center mt-3">
                 <h2 class="logo-font gradient"><a href="{% url 'products' %}">Products</a></h2>
                 {% for c in current_categories %}
                     <a class="category-bar text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
@@ -129,6 +129,9 @@
             <i class="fas fa-angle-double-up fa-2x mx-auto my-auto"></i>
         </a>
     </div>
+{% endblock %}
+
+{% block page_footer %}
     <div class="container footer-container">
         <div class="row">
             <div class="col"></div>

@@ -41,7 +41,7 @@ body {
 }
 
 .text-fc {
-    color:#2C462B !important;
+    color:#20321f !important;
 }
 
 .border-black {
@@ -63,8 +63,13 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background:#d6b496;
+	background:#eddac9;
 	z-index: -1;
+}
+
+/* change overlay background color on product details  */
+.details {
+    background: #eeffed !important;
 }
 
 a.category-bar > span.badge:hover {
@@ -74,6 +79,7 @@ a.category-bar > span.badge:hover {
 
 hr {
     border-top: 1px solid white;
+    box-sizing: border-box;
 }
 
 /* ---------- Footer ---------- */
@@ -97,40 +103,47 @@ hr {
 
 /* --------------- Buttons ------------- */
 
-/* Buttons for contact form */
-.btn-fc-contact {
-    background: #ffffff;
-    color: #2C462B; 
-}
-
-.btn-fc-contact:hover {
-    background:#F57200;
-    color: #ffffff;
+.btn-qty {
+    background:#2C462B;
+    color: #F57200;
 }
 
 .shop-now-button {
     background:#2C462B;
-    color: #F57200;
+    color: #fb9237;
     min-width: 260px;
+}
+
+/* Search button*/
+.btn-fc-sc {
+    background:#2C462B;
+    color: #fb9237;
 }
 
 /* main button */
 .btn-fc {
     background:#2C462B;
-    color: #F57200;
-}
-
-.shop-now-button:hover,
-.btn-fc:hover,
-.btn-fc-out:hover {
-    background: #F57200;
-    color: #2C462B !important;
+    color: #fb9237;
+    border-radius: 0.25rem;
 }
 
 /* Keep shopping button */
 .btn-fc-out {
-    color: #2C462B !important;
+    color: #2C462B;
     border: 1px solid #2C462B ;
+    border-radius: 0.25rem;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-fc:hover,
+.btn-fc:active,
+.btn-fc:focus,
+.btn-qty:hover,
+.btn-fc-out:hover {
+    background: #F57200;
+    color: #20321f !important;
 }
 
 /* Back to top button */
@@ -168,19 +181,17 @@ input[name='q']::placeholder {
     box-shadow: 0 0 0 0.2rem rgb(44 70 43 / 50%) !important;
 }
 
-/* background color on product details  */
-
-.details {
-    background: #b7d3b6 !important;
-}
-
 .navbar {
     padding: .5rem .5rem;
 }
 
+/* ---------- Contact Form ---------- */
+.contact-container {
+    background-color: #f7e2d0;
+}
+
 /* ---------- from CSS-tricks.com ---------- */
 
-/* font and background changed for project match */ 
 .gradient,
 .dropdown-item:hover {
     font-family: Lobster;
@@ -193,13 +204,6 @@ input[name='q']::placeholder {
 .dropdown-item {
     font-family: Lobster;
     color:black;
-}
-
-.dropdown-item:hover {
-    text-decoration: underline;
-    color: #000;
-    position: relative;
-    z-index: 1;
 }
 
 span.gradient {
@@ -252,6 +256,8 @@ span.gradient {
     border-bottom-color: #343a40 !important;
 }
 
+/* --------- Bag --------- */
+
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
@@ -267,9 +273,9 @@ span.gradient {
     z-index: 99999999999;
 }
 
-.fc-toast {
+/*.fc-toast {
     overflow: visible;
-}
+}*/
 
 .toast-capper {
     height: 2px;
@@ -284,7 +290,7 @@ span.gradient {
 
 .allauth-form-inner-content input {
     border-color: #000;
-    border-radius: 0;
+    font-size: 0.9rem;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -299,20 +305,20 @@ span.gradient {
 .allauth-form-inner-content input[type='submit'] {
 	/* btn */
 	display: inline-block;
-    font-weight: 600;
-    color: #244723;
+    font-weight: 500;
+    color: #fb9237;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #F57200;
-    border: 1px solid #000;
+    background: #2C462B;
+    border: 1px solid #2C462B;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius: 0.25rem;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -321,25 +327,27 @@ span.gradient {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {
 	color: #fff;
-    background-color: #244723;
+    background-color: #F57200;
     border-color: #222;
 }
 
-.allauth-form-inner-content a {
+.allauth-form-inner-content .form-group {
 	color: #244723; /* text-info */
     font-weight: 600;
 }
 
-  /* to overide main btn-fc class */ 
-.allauth-form-inner-content a.btn-fc {
-    color: #F57200;
+  /* to overide main btn-fc class */
+.allauth-form-inner-content a{
+    color: #244723;
     border-color: #222;
+    font-weight: 600;
 }
 
-.allauth-form-inner-content a.btn-fc:hover {
-    color: #fff;
+.allauth-form-inner-content a:hover {
+    color: #fb9237;
     border-color: #222;
 }
+/* ---------- End Allauth --------- */
 
 /* Product Form */
 
@@ -369,7 +377,7 @@ span.gradient {
     border-radius: 50%;
 }
 
-
+/* ---------- End Product Form --------- */
 
 /* -------------- Media Queries ----------------- */
 
@@ -382,10 +390,14 @@ span.gradient {
 
 }
 
-/* Slightly larger container and snaller padding on xl screens */
+/* Slightly larger container and smaller padding on xl screens */
 @media (min-width: 1200px) {
     .container {
-        max-width: 70%;
+        max-width: 80%;
+    }
+
+    .contact-container {
+        max-width: 50%;
     }
 
     .footer-container {
@@ -416,23 +428,18 @@ span.gradient {
         z-index: 1030;
     }
 
-    .header-container {
+    .header-container,
+    .footer-container {
         padding-top: 164px;
     }
 
-    .footer-container {
-        padding-top: 80px;
-    }
 }
 
 /* pad the top when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
+    .header-container,
     .footer-container {
-        padding-top: 90px;
+        padding-top: 116px;
     }
 
     .text-fc-org {
@@ -460,9 +467,14 @@ span.gradient {
         font-size: 1rem;
     }
 
+    .allauth-form-inner-content p,
+    .allauth-form-inner-content a,
+    .allauth-form-inner-content button {
+        font-size: 0.9rem;
+    }
     #delivery-banner h4,
     .gradient {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     h2.gradient {
@@ -478,7 +490,10 @@ span.gradient {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
-    
+    .btn.btn-fc-out,
+    .btn.btn-fc {
+        margin-top: 5px !important;
+    }
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
@@ -508,20 +523,18 @@ span.gradient {
         right: 5px;
         font-size: 12px; 
     }
-
-    .footer-container {
-        padding-top: 60px;
-    }
 }
 /* slightly change size for buttons and icon for small devices as Galaxy Fold */
-@media (max-width: 383px) {
-    .mobile {
+@media (max-width: 384px) {
+    .btn-fc,
+    .btn-fc-out,
+    .allauth-form-inner-content button {
         width: 8rem;
-        font-size: small;
+        /*font-size: small !important;*/
         margin-top: 5px !important;
     }
 
-    .icon {
+    .icon-btn {
         display: none;
     }
 }

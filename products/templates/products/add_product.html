@@ -15,19 +15,19 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="logo-font text-center gradient my-md-3">Product Management</h2>
+                <h2 class="logo-font text-center gradient my-3">Product Management</h2>
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 offset-md-3">
                 <h5 class="text-muted text-center gradient">Add a Product</h5>
                 <hr>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -37,21 +37,22 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
-                    <div class="text-right my-3">
-                        <a class="btn btn-fc-out rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-fc rounded-0" type="submit">Add Product</button>
+                    <div class="text-center my-3">
+                        <a class="btn btn-fc-out" href="{% url 'products' %}">Cancel</a>
+                        <button class="btn btn-fc" type="submit">Add Product</button>
                     </div>
                 </form>
             </div>            
         </div>
     </div>
+{% endblock %}
+{% block page_footer %}
     <div class="container footer-container">
         <div class="row">
             <div class="col"></div>
         </div>
     </div>
 {% endblock %}
-
 {% block postloadjs %}
     {{ block.super }}
     <script type="text/javascript">
