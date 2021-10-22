@@ -8,3 +8,4 @@ node_modules/
 .github/
 *.pyc
 *.sqlite3
+__pycache__
