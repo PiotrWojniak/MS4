@@ -9,8 +9,8 @@
         </div>
     </div>
 {% endblock %}
-
 {% block content %}
+    <!--Bag-->
     <div class="overlay"></div>
     <div class="container-fluid mb-2">
         <div class="row">
@@ -51,12 +51,13 @@
                                             <p class="my-0">Price Each: €{{ item.product.price }}</p>
                                             <p><strong>Subtotal: </strong>€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-8">
                                             {% include "bag/quantity-form.html" %}
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--Add divider depend of items in bag-->
                             {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none my-3">
                                 <hr>
