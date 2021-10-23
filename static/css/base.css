@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 html {
     height: 100%;
 }
@@ -48,15 +50,15 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
-
+/* delivery baner */
 .bg-color {
     background: #2C462B !important;
 }
 
-.custom-select {
+/*.custom-select {
     background: #2C462B;
     color: #fb9237;
-}
+}*/
 
 .overlay {
 	height: 100%;
@@ -71,11 +73,6 @@ body {
 /* change overlay background color on product details  */
 .details {
     background: #eeffed !important;
-}
-
-a.category-bar > span.badge:hover {
-    background: #2C462B !important;
-    color: #F57200 !important;
 }
 
 hr {
@@ -115,20 +112,21 @@ a:hover {
 
 .shop-now-button {
     background:#2C462B;
-    color: #fb9237;
+    color: #ffaa60;
     min-width: 260px;
 }
 
 /* Search button*/
-.btn-fc-sc {
+.btn-fc-sc,
+.custom-select {
     background:#2C462B;
-    color: #fb9237;
+    color: #ffaa60;
 }
 
 /* main button */
 .btn-fc {
     background:#2C462B;
-    color: #fb9237;
+    color: #ffaa60;
     border-radius: 0.25rem;
 }
 
@@ -140,14 +138,14 @@ a:hover {
 }
 
 .shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+/*.shop-now-button:active,
+.shop-now-button:focus,*/
 .btn-fc:hover,
-.btn-fc:active,
-.btn-fc:focus,
+/*.btn-fc:active,
+.btn-fc:focus,*/
 .btn-qty:hover,
 .btn-fc-out:hover {
-    background: #F57200;
+    background: #ff8c28e8;
     color: #20321f !important;
 }
 
@@ -171,9 +169,11 @@ a:hover {
     cursor: pointer;
 }
 
+a.category-bar > span.badge:hover,
 .btt-link:hover {
     background:#2C462B;
-    color: #F57200;
+    color: #ffaa60 !important;
+    font-weight: 300;
 }
 
 /* search box placeholder */
@@ -193,11 +193,6 @@ input[name='q']::placeholder {
 .table {
 	display: contents;   /* Allow the centering to work */
 	margin: 0 auto;
-}
-
-/* ---------- Contact Form ---------- */
-.contact-container {
-    background-color: #f7e2d0;
 }
 
 /* ---------- from CSS-tricks.com ---------- */
@@ -316,7 +311,7 @@ span.gradient {
 	/* btn */
 	display: inline-block;
     font-weight: 500;
-    color: #fb9237;
+    color: #fcb271;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -341,16 +336,15 @@ span.gradient {
     border-color: #222;
 }
 
-.allauth-form-inner-content .form-group {
+.allauth-form-inner-content .form-group,
+.allauth-form-inner-content a {
 	color: #244723; /* text-info */
     font-weight: 600;
 }
 
   /* to overide main btn-fc class */
 .allauth-form-inner-content a{
-    color: #244723;
     border-color: #222;
-    font-weight: 600;
 }
 
 .allauth-form-inner-content a:hover {
@@ -389,6 +383,26 @@ span.gradient {
 
 /* ---------- End Product Form --------- */
 
+/* Bag */
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Contact Form  */
+.contact-container {
+    background-color: #f7e2d0;
+}
+
+/* Images */
+.img-product {
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
 /* -------------- Media Queries ----------------- */
 
 /* Adjust bag cards on screen larger then 1700px */
@@ -411,6 +425,9 @@ span.gradient {
 
     .footer-container {
         padding-top: 50px;
+    }
+    .form-group {
+        width: 25% !important;
     }
 }
 
@@ -474,7 +491,7 @@ span.gradient {
 
     .navbar-toggler {
         padding: .6rem .6rem;
-        font-size: 1rem;
+        font-size: 14px;
     }
 
     .allauth-form-inner-content p,
@@ -491,7 +508,7 @@ span.gradient {
         font-size: 1.5rem;
     }
     
-    .btn.btn-fc-out.rounded-0.btn-sm,
+    /*.btn.btn-fc-out.rounded-0.btn-sm,
     .btn.btn-fc.rounded-0.btn-sm,
     .btn.shop-now-button.rounded-3.btn-sm,
     .btn.btn-fc-out.rounded-0,
@@ -499,10 +516,12 @@ span.gradient {
     .shop-now-button.rounded-3 {
         padding: .375rem .375rem;
         font-size: .75rem;
-    }
+    }*/
     .btn.btn-fc-out,
     .btn.btn-fc {
         margin-top: 5px !important;
+        padding: .375rem .375rem;
+        font-size: .75rem;
     }
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
@@ -512,9 +531,16 @@ span.gradient {
         padding: 0.25rem 0.75rem;
     }
 
-    .footer-fc {
+    /*.footer-fc {
         padding-top: 0.25rem !important;
         padding-bottom: 0.25rem !important;
+    }*/
+    .btt-button {
+        height: 32px;
+        width: 30px;
+        bottom: 7rem;
+        right: 5px;
+        font-size: 12px; 
     }
 }
 
@@ -531,25 +557,13 @@ span.gradient {
         min-width: 150px;
     }
 
-    .btt-button {
-        height: 32px;
-        width: 30px;
-        bottom: 7rem;
-        right: 5px;
-        font-size: 12px; 
-    }
     /* To overide my account menu */
-    .navbar-toggler {
-        font-size: 15px;
-    }
 
     .dropdown-menu.show {
         min-width: fit-content;
         font-size: 15px;
     }
-}
-/* slightly change size for buttons and icon for small devices as Galaxy Fold */
-@media (max-width: 384px) {
+
     .btn-fc,
     .btn-fc-out,
     .allauth-form-inner-content button {
@@ -562,3 +576,6 @@ span.gradient {
         display: none;
     }
 }
+/* slightly change size for buttons and icon for small devices as Galaxy Fold
+@media (max-width: 384px) {
+}*/
