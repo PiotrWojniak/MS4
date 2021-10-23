@@ -1,3 +1,4 @@
+"""Import uuid to create unique order number"""
 import uuid
 
 from django.db import models
@@ -53,7 +54,8 @@ class Order(models.Model):
         self.order_total = self.lineitems.aggregate(Sum(
             'lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_SHIPPING_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_SHIPPING_PERCENTAGE / 100
+            self.delivery_cost = (
+                self.order_total * settings.STANDARD_SHIPPING_PERCENTAGE / 100)
         else:
             self.delivery_cost = 0
         self.grand_total = self.order_total + self.delivery_cost
