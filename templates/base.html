@@ -9,25 +9,28 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="description" content="Family Craft straight from the heart">
+            <!-- Cashing  -->
         {% endblock %}
 
         {% block extra_meta %}
         {% endblock %}
-
+        
         {% block corecss %}
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+            <!--link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap"-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
             <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% endblock %}
-
+        
         {% block extra_css %}
         {% endblock %}
-
+        
         {% block corejs %}
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://kit.fontawesome.com/21c1131027.js" crossorigin="anonymous"></script>
+            <!--script src="https://kit.fontawesome.com/21c1131027.js" crossorigin="anonymous"></script-->
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
             </script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -37,8 +40,16 @@
             <!-- Stripe -->
             <script src="https://js.stripe.com/v3/"></script>
         {% endblock %}
-
+        
         {% block extra_js %}
+        {% endblock %}
+        
+        {% block favicon %}
+            <!-- Favicon -->
+            <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png'}">
+            <link rel="icon" type="image/png" sizes="32x32" href="{% static favicon/'favicon-32x32.png'}">
+            <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png'}">
+            <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
         {% endblock %}
 
         <title>Family Craft {% block extra_title%}{% endblock %}</title>
@@ -50,8 +61,8 @@
                 <!-- Logo container -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link logo-font text-black my-0">
-                        <!--img src="https://images90.fotosik.pl/541/0dc305bd4346b34a.jpg" height="50" width="50" alt="Brand-logo"-->
-                        <img src="https://images91.fotosik.pl/545/5aa5e9c5c1e5560c.jpg"  alt="Brant-logo">
+                        <img src="{% static 'favicon/favicon.ico' %}" alt="Brand-logo">
+                        <!--img src="https://images91.fotosik.pl/545/5aa5e9c5c1e5560c.jpg"  alt="Family craft logo"-->
                         <span class="gradient align-middle">Family Craft</span>
                     </a>
                 </div>
@@ -121,6 +132,7 @@
                     {% include 'includes/main-nav.html' %}
                 </nav>
             </div>
+            <!--Delivery baner-->
             <div id="delivery-banner" class="row text-center">
                 <div class="col bg-color text-white">
                     <h4 class="logo-font my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h4>
@@ -153,7 +165,9 @@
 
         {% block page_footer %}
         {% endblock %}
-        <footer class="container-fluid fixed-bottom py-2 footer-fc"> 
+        <!--Footer-->
+        <footer class="container-fluid fixed-bottom py-3 footer-fc"> 
+            <!--div class="container"-->
             <div class="row">
                 <div class="col-12 text-center">
                     <!-- social links -->
@@ -174,15 +188,22 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center mb-0">&copy; 2021 by family craft - straight from the heart!</p>
+                        <p class="text-center mb-0">&copy; 2021 by family craft straight from the heart!</p>
                     </div>
                 </div>
             </div>
+            <!--/div-->
         </footer>
         {% block postloadjs %}
-            <script type="text/javascript">
-            $('.toast').toast('show');
-            </script>
+        <script>
+            $(document).ready(function() {
+                $(".toast").toast({ 
+                    autohide: true,
+                    delay: 3000 
+                });
+                $(".toast").toast('show');
+            });
+        </script>
         {% endblock %}
     </body>
 </html>
