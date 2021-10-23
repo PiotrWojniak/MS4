@@ -98,13 +98,13 @@
                             </div>
                             <!-- Submit and keep shopping button -->
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="btn btn-fc-out btn-sm mt-4">
+                                <a href="{% url 'products' %}" class="btn btn-fc-out mt-4">
                                     <span class="icon-btn">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-fc btn-sm mt-4 text-uppercase" value="Add to Bag">
+                                <input type="submit" class="btn btn-fc mt-4 text-uppercase" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}

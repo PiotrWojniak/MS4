@@ -50,15 +50,11 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
 /* delivery baner */
 .bg-color {
     background: #2C462B !important;
 }
-
-/*.custom-select {
-    background: #2C462B;
-    color: #fb9237;
-}*/
 
 .overlay {
 	height: 100%;
@@ -92,6 +88,10 @@ hr {
     text-transform: capitalize;
     text-align: center;
     color: white !important;
+}
+
+p.footer-text {
+    margin-bottom: 0;
 }
 
 .hover-fc:hover {
@@ -128,6 +128,7 @@ a:hover {
     background:#2C462B;
     color: #ffaa60;
     border-radius: 0.25rem;
+    line-height: 1.5;
 }
 
 /* Keep shopping button */
@@ -135,14 +136,11 @@ a:hover {
     color: #2C462B;
     border: 1px solid #2C462B ;
     border-radius: 0.25rem;
+    line-height: 1.5;
 }
 
 .shop-now-button:hover,
-/*.shop-now-button:active,
-.shop-now-button:focus,*/
 .btn-fc:hover,
-/*.btn-fc:active,
-.btn-fc:focus,*/
 .btn-qty:hover,
 .btn-fc-out:hover {
     background: #ff8c28e8;
@@ -261,14 +259,6 @@ span.gradient {
     border-bottom-color: #343a40 !important;
 }
 
-/* --------- Bag --------- */
-
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 /* -------------- bootstrap toasts --------------- */
 
 .message-container {
@@ -277,10 +267,6 @@ span.gradient {
     right: 15px;
     z-index: 99999999999;
 }
-
-/*.fc-toast {
-    overflow: visible;
-}*/
 
 .toast-capper {
     height: 2px;
@@ -351,10 +337,8 @@ span.gradient {
     color: #fb9237;
     border-color: #222;
 }
-/* ---------- End Allauth --------- */
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -380,8 +364,6 @@ span.gradient {
     border-color: #dc3545;
     border-radius: 50%;
 }
-
-/* ---------- End Product Form --------- */
 
 /* Bag */
 .bag-notification-wrapper {
@@ -497,8 +479,9 @@ span.gradient {
     .allauth-form-inner-content p,
     .allauth-form-inner-content a,
     .allauth-form-inner-content button {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
+
     #delivery-banner h4,
     .gradient {
         font-size: 1rem;
@@ -508,21 +491,12 @@ span.gradient {
         font-size: 1.5rem;
     }
     
-    /*.btn.btn-fc-out.rounded-0.btn-sm,
-    .btn.btn-fc.rounded-0.btn-sm,
-    .btn.shop-now-button.rounded-3.btn-sm,
-    .btn.btn-fc-out.rounded-0,
-    .btn.btn-fc.rounded-0,
-    .shop-now-button.rounded-3 {
-        padding: .375rem .375rem;
-        font-size: .75rem;
-    }*/
     .btn.btn-fc-out,
     .btn.btn-fc {
-        margin-top: 5px !important;
-        padding: .375rem .375rem;
+        padding: .375rem .75rem;
         font-size: .75rem;
     }
+
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
@@ -531,10 +505,6 @@ span.gradient {
         padding: 0.25rem 0.75rem;
     }
 
-    /*.footer-fc {
-        padding-top: 0.25rem !important;
-        padding-bottom: 0.25rem !important;
-    }*/
     .btt-button {
         height: 32px;
         width: 30px;
@@ -566,16 +536,14 @@ span.gradient {
 
     .btn-fc,
     .btn-fc-out,
+    .allauth-form-inner-content a,
     .allauth-form-inner-content button {
-        width: 8rem;
-        /*font-size: small !important;*/
+        min-width: 140px;
         margin-top: 5px !important;
+        
     }
 
     .icon-btn {
         display: none;
     }
 }
-/* slightly change size for buttons and icon for small devices as Galaxy Fold
-@media (max-width: 384px) {
-}*/

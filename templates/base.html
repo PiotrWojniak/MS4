@@ -19,7 +19,6 @@
         {% block corecss %}
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-            <!--link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap"-->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
             <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% endblock %}
@@ -30,7 +29,6 @@
         {% block corejs %}
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <!--script src="https://kit.fontawesome.com/21c1131027.js" crossorigin="anonymous"></script-->
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
             </script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -59,10 +57,9 @@
         <header class="container-fluid fixed-top">
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <!-- Logo container -->
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center ">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link logo-font text-black my-0">
                         <img src="{% static 'favicon/favicon.ico' %}" alt="Brand-logo">
-                        <!--img src="https://images91.fotosik.pl/545/5aa5e9c5c1e5560c.jpg"  alt="Family craft logo"-->
                         <span class="gradient align-middle">Family Craft</span>
                     </a>
                 </div>
@@ -83,11 +80,11 @@
                 </div>
                 <!-- Profile and Bag -->
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                    <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <ul class="list-inline list-unstyled text-center my-0">
                         <!-- user account -->
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center gradient">
+                                <div class="gradient pt-1">
                                     <div><i class="fas fa-user fa-lg"></i></div>
                                     <p class="my-0">My Account</p>
                                 </div>
@@ -108,7 +105,7 @@
                         <!-- shopping bag and grand total-->
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-                                <div class="text-center gradient">
+                                <div class="gradient pt-1">
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
                                         {% if grand_total %}
@@ -169,9 +166,9 @@
         <footer class="container-fluid fixed-bottom py-3 footer-fc"> 
             <!--div class="container"-->
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12">
                     <!-- social links -->
-                    <ul class="list-inline list-unstyled text-white mb-0">
+                    <ul class="list-inline list-unstyled mb-0">
                         <li class="list-inline-item text-white"><a href="{% url 'contact' %}" class="text-white">Contact us!
                             <i class="far fa-envelope hover-fc text-white pl-1"></i></a>
                         </li>
@@ -188,7 +185,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center mb-0">&copy; 2021 by family craft straight from the heart!</p>
+                        <p class="footer-text">&copy; 2021 by family craft straight from the heart!</p>
                     </div>
                 </div>
             </div>
