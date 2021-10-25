@@ -44,9 +44,9 @@
         
         {% block favicon %}
             <!-- Favicon -->
-            <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png'}">
-            <link rel="icon" type="image/png" sizes="32x32" href="{% static favicon/'favicon-32x32.png'}">
-            <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png'}">
+            <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+            <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+            <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
             <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
         {% endblock %}
 
@@ -83,7 +83,7 @@
                     <ul class="list-inline list-unstyled text-center my-0">
                         <!-- user account -->
                         <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" id="user-options" class="text-black nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="gradient pt-1">
                                     <div><i class="fas fa-user fa-lg"></i></div>
                                     <p class="my-0">My Account</p>
@@ -169,7 +169,7 @@
                 <div class="col-12">
                     <!-- social links -->
                     <ul class="list-inline list-unstyled mb-0">
-                        <li class="list-inline-item text-white"><a href="{% url 'contact' %}" class="text-white">Contact us!
+                        <li class="list-inline-item">Contact Us!<a href="{% url 'contact' %}" class="text-white">
                             <i class="far fa-envelope hover-fc text-white pl-1"></i></a>
                         </li>
                         <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank" rel="noreferrer">
@@ -179,14 +179,12 @@
                             <i class="fab fa-instagram hover-fc text-white" id="instagram" title="Instagram"></i></a>
                         </li>
                         <li class="list-inline-item"><a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-                            <i class="fab fa-twitter hover-fc text-white" id="twitter" title="Twitter"></i></a></li>
-                        </ul>
-                    </div>
+                            <i class="fab fa-twitter hover-fc text-white" id="twitter" title="Twitter"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p class="footer-text">&copy; 2021 by family craft straight from the heart!</p>
-                    </div>
+                <div class="col-12">
+                    <p class="footer-text">&copy; 2021 by family craft straight from the heart!</p>
                 </div>
             </div>
             <!--/div-->

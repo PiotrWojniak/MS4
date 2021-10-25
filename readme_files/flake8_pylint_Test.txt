@@ -1,0 +1,647 @@
+                            bag
+*******************************************************************************************************
+Your code has been rated at -10.00/10 (previous run: -10.00/10, +0.00)
+
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/bag/admin.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/admin.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/admin.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+2,1,F,F401:'django.contrib.admin' imported but unused
+##########Linting Output - pylint##########
+************* Module bag.admin
+2,0,warning,unused-import:Unused admin imported from django.contrib
+
+---------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: -10.00/10, +10.00)
+*********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/bag/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/apps.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+*********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/bag/contexts.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/contexts.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/contexts.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+------------------------------------
+Your code has been rated at 10.00/10
+********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/bag/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/models.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+2,1,F,F401:'django.db.models' imported but unused
+##########Linting Output - pylint##########
+************* Module bag.models
+2,0,warning,unused-import:Unused models imported from django.db
+
+---------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: -10.00/10, +10.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/bag/tests.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/tests.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/tests.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+2,1,F,F401:'django.test.TestCase' imported but unused
+##########Linting Output - pylint##########
+************* Module bag.tests
+2,0,warning,unused-import:Unused TestCase imported from django.test
+
+---------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: -10.00/10, +10.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/bag/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/urls.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/bag/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/bag/views.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module bag.views
+119,11,warning,broad-except:Catching too general exception Exception
+119,4,convention,invalid-name:Variable name "e" doesn't conform to snake_case naming style
+
+-----------------------------------
+Your code has been rated at 9.71/10
+**********************************************************************************************************
+#CHECKOUT
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/admin.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/admin.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/admin.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.17/10, +0.83)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/apps.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+10,9,F,F401:'checkout.signals' imported but unused
+##########Linting Output - pylint##########
+************* Module checkout.apps
+10,8,convention,import-outside-toplevel:Import outside toplevel (checkout.signals)
+10,8,warning,unused-import:Unused import checkout.signals
+
+------------------------------------------------------------------
+Your code has been rated at 6.00/10 (previous run: 4.00/10, +2.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/forms.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/forms.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/forms.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module checkout.forms
+8,4,refactor,too-few-public-methods:Too few public methods (0/2)
+
+------------------------------------------------------------------
+Your code has been rated at 9.44/10 (previous run: 8.89/10, +0.56)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/models.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+27,23,D,DJ01:Avoid using null=True on string-based fields such CharField.
+28,14,D,DJ01:Avoid using null=True on string-based fields such CharField.
+29,16,D,DJ01:Avoid using null=True on string-based fields such CharField.
+86,20,D,DJ01:Avoid using null=True on string-based fields such CharField.
+##########Linting Output - pylint##########
+************* Module checkout.models
+43,4,refactor,no-self-use:Method could be a function
+54,27,error,no-member:Instance of 'Order' has no 'lineitems' member
+98,30,error,no-member:Instance of 'ForeignKey' has no 'price' member
+102,22,error,no-member:Instance of 'ForeignKey' has no 'sku' member
+102,50,error,no-member:Instance of 'ForeignKey' has no 'order_number' member
+
+-----------------------------------
+Your code has been rated at 5.88/10
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/signals.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/signals.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/signals.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module checkout.signals
+9,19,warning,unused-argument:Unused argument 'sender'
+9,37,warning,unused-argument:Unused argument 'created'
+9,0,warning,unused-argument:Unused argument 'kwargs'
+17,21,warning,unused-argument:Unused argument 'sender'
+17,0,warning,unused-argument:Unused argument 'kwargs'
+
+------------------------------------------------------------------
+Your code has been rated at 2.86/10 (previous run: 2.86/10, +0.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/urls.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/views.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+79,80,E,E501:line too long (81 > 79 characters)
+##########Linting Output - pylint##########
+************* Module checkout.views
+34,11,warning,broad-except:Catching too general exception Exception
+34,4,convention,invalid-name:Variable name "e" doesn't conform to snake_case naming style
+40,0,refactor,too-many-locals:Too many local variables (21/15)
+62,8,refactor,no-else-return:Unnecessary "else" after "return"
+70,30,error,no-member:Class 'Product' has no 'objects' member
+87,23,error,no-member:Class 'Product' has no 'DoesNotExist' member
+47,4,refactor,too-many-nested-blocks:Too many nested blocks (6/5)
+124,26,error,no-member:Class 'UserProfile' has no 'objects' member
+136,19,error,no-member:Class 'UserProfile' has no 'DoesNotExist' member
+40,0,refactor,too-many-branches:Too many branches (14/12)
+163,18,error,no-member:Class 'UserProfile' has no 'objects' member
+
+------------------------------------------------------------------
+Your code has been rated at 6.52/10 (previous run: 6.52/10, +0.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/webhook_handler.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/webhook_handler.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/webhook_handler.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module checkout.webhook_handler
+17,0,convention,invalid-name:Class name "StripeWH_Handler" doesn't conform to PascalCase naming style
+23,4,refactor,no-self-use:Method could be a function
+40,4,refactor,no-self-use:Method could be a function
+48,4,refactor,too-many-locals:Too many local variables (23/15)
+71,22,error,no-member:Class 'UserProfile' has no 'objects' member
+88,24,error,no-member:Class 'Order' has no 'objects' member
+104,19,error,no-member:Class 'Order' has no 'DoesNotExist' member
+107,8,refactor,no-else-return:Unnecessary "else" after "return"
+148,19,warning,broad-except:Catching too general exception Exception
+115,24,error,no-member:Class 'Order' has no 'objects' member
+130,30,error,no-member:Class 'Product' has no 'objects' member
+148,12,convention,invalid-name:Variable name "e" doesn't conform to snake_case naming style
+48,4,refactor,too-many-branches:Too many branches (14/12)
+159,4,refactor,no-self-use:Method could be a function
+
+------------------------------------------------------------------
+Your code has been rated at 5.47/10 (previous run: 5.47/10, +0.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/checkout/webhooks.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/webhooks.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/checkout/webhooks.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+29,5,F,F841:local variable 'e' is assigned to but never used
+32,5,F,F841:local variable 'e' is assigned to but never used
+##########Linting Output - pylint##########
+************* Module checkout.webhooks
+35,11,warning,broad-except:Catching too general exception Exception
+29,4,convention,invalid-name:Variable name "e" doesn't conform to snake_case naming style
+32,4,convention,invalid-name:Variable name "e" doesn't conform to snake_case naming style
+35,4,convention,invalid-name:Variable name "e" doesn't conform to snake_case naming style
+29,4,warning,unused-variable:Unused variable 'e'
+
+------------------------------------------------------------------
+Your code has been rated at 8.08/10 (previous run: 8.08/10, +0.00)
+**********************************************************************************************************
+# CONTACT
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/contact/__init__.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/__init__.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/__init__.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/contact/admin.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/admin.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/admin.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+------------------------------------
+Your code has been rated at 10.00/10
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/contact/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/apps.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 7.50/10, +2.50)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/contact/forms.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/forms.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/forms.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module contact.forms
+8,4,refactor,too-few-public-methods:Too few public methods (0/2)
+
+------------------------------------------------------------------
+Your code has been rated at 9.41/10 (previous run: 8.82/10, +0.59)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/contact/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/models.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module contact.models
+20,4,refactor,too-few-public-methods:Too few public methods (0/2)
+32,4,error,invalid-str-returned:__str__ does not return str
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 4.17/10, +0.83)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/contact/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/urls.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+------------------------------------
+Your code has been rated at 10.00/10
+**********************************************************************************************************
+Your code has been rated at 10.00/10
+
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/contact/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/contact/views.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module contact.views
+16,8,refactor,no-else-return:Unnecessary "else" after "return"
+22,12,warning,unreachable:Unreachable code
+
+------------------------------------------------------------------
+Your code has been rated at 9.13/10 (previous run: 9.13/10, +0.00)
+**********************************************************************************************************
+# Family_craft
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/family_craft/__init__.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/__init__.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/__init__.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/family_craft/asgi.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/asgi.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/asgi.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+------------------------------------
+Your code has been rated at 10.00/10
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/family_craft/settings.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/settings.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/settings.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/family_craft/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/urls.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/family_craft/wsgi.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/wsgi.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/family_craft/wsgi.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+**********************************************************************************************************
+# Home
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/home/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/home/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/home/apps.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 7.50/10, +2.50)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/home/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/home/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/home/urls.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 6.67/10, +3.33)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/home/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/home/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/home/views.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 6.67/10, +3.33)
+**********************************************************************************************************
+# Products
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/products/admin.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/admin.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/admin.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 6.67/10, +3.33)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/products/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/apps.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 5.00/10, +5.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/products/forms.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/forms.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/forms.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module products.forms
+9,4,refactor,too-few-public-methods:Too few public methods (0/2)
+19,21,error,no-member:Class 'Category' has no 'objects' member
+23,12,warning,unused-variable:Unused variable 'field_name'
+
+------------------------------------------------------------------
+Your code has been rated at 5.33/10 (previous run: 3.33/10, +2.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/products/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/models.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+13,21,D,DJ01:Avoid using null=True on string-based fields such CharField.
+27,11,D,DJ01:Avoid using null=True on string-based fields such CharField.
+34,17,D,DJ01:Avoid using null=True on string-based fields such URLField.
+##########Linting Output - pylint##########
+************* Module products.models
+8,4,refactor,too-few-public-methods:Too few public methods (0/2)
+15,4,error,invalid-str-returned:__str__ does not return str
+18,4,convention,missing-function-docstring:Missing function or method docstring
+37,4,error,invalid-str-returned:__str__ does not return str
+
+------------------------------------------------------------------
+Your code has been rated at 4.55/10 (previous run: 4.09/10, +0.45)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/products/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/urls.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 6.67/10, +3.33)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/products/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/views.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+40,9,E,E265:block comment should start with '# '
+##########Linting Output - pylint##########
+************* Module products.views
+15,15,error,no-member:Class 'Product' has no 'objects' member
+26,25,error,no-member:Class 'Category' has no 'objects' member
+88,8,refactor,no-else-return:Unnecessary "else" after "return"
+116,8,refactor,no-else-return:Unnecessary "else" after "return"
+
+------------------------------------------------------------------
+Your code has been rated at 8.59/10 (previous run: 8.49/10, +0.10)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/products/widgets.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/widgets.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/products/widgets.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+13,80,E,E501:line too long (87 > 79 characters)
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 8.57/10, +1.43)
+**********************************************************************************************************
+# Profile
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/profiles/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/apps.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/apps.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 5.00/10, +5.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/profiles/forms.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/forms.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/forms.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+38,80,E,E501:line too long (98 > 79 characters)
+##########Linting Output - pylint##########
+************* Module profiles.forms
+9,4,refactor,too-few-public-methods:Too few public methods (0/2)
+
+------------------------------------------------------------------
+Your code has been rated at 9.44/10 (previous run: 8.33/10, +1.11)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/profiles/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/models.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/models.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+16,28,D,DJ01:Avoid using null=True on string-based fields such CharField.
+18,31,D,DJ01:Avoid using null=True on string-based fields such CharField.
+20,31,D,DJ01:Avoid using null=True on string-based fields such CharField.
+22,28,D,DJ01:Avoid using null=True on string-based fields such CharField.
+24,22,D,DJ01:Avoid using null=True on string-based fields such CharField.
+26,24,D,DJ01:Avoid using null=True on string-based fields such CharField.
+##########Linting Output - pylint##########
+************* Module profiles.models
+32,15,error,no-member:Instance of 'OneToOneField' has no 'username' member
+41,8,error,no-member:Class 'UserProfile' has no 'objects' member
+36,34,warning,unused-argument:Unused argument 'sender'
+36,0,warning,unused-argument:Unused argument 'kwargs'
+
+------------------------------------------------------------------
+Your code has been rated at 4.00/10 (previous run: 4.00/10, +0.00)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/profiles/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/urls.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/urls.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 6.67/10, +3.33)
+**********************************************************************************************************
+> ~/.pyenv/shims/flake8 --format=%(row)d,%(col)d,%(code).1s,%(code)s:%(text)s /workspace/MS4/profiles/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/views.py
+cwd: /workspace/MS4
+> ~/.pyenv/shims/python -m pylint --msg-template='{line},{column},{category},{symbol}:{msg}' --reports=n --output-format=text /workspace/MS4/profiles/views.py
+cwd: /workspace/MS4
+##########Linting Output - flake8##########
+##########Linting Output - pylint##########
+************* Module profiles.views
+14,4,warning,redefined-outer-name:Redefining name 'profile' from outer scope (line 12)
+8,0,convention,wrong-import-order:first party import "from checkout.models import Order" should be placed before "from .models import UserProfile"
+
+------------------------------------------------------------------
+Your code has been rated at 9.20/10 (previous run: 8.80/10, +0.40)
+**********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************
+**********************************************************************************************************

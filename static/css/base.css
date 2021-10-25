@@ -377,7 +377,7 @@ span.gradient {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
+    border-color: #e6b9bd;
     border-radius: 50%;
 }
 
@@ -430,6 +430,7 @@ body {
     width: 100%;
     line-height: 1.4;
     text-align: center;
+    background: antiquewhite;
 }
 
 .notfound .notfound-404 {
