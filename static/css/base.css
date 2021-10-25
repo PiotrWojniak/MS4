@@ -409,7 +409,8 @@ span.gradient {
         padding-top: 50px;
     }
     .form-group {
-        width: 25% !important;
+        width: 100% !important;
+        align-content: center;
     }
 }
 
@@ -511,6 +512,11 @@ span.gradient {
         bottom: 7rem;
         right: 5px;
         font-size: 12px; 
+    }
+
+    .form-control {
+        height: 75%;
+        font-size: 14px;
     }
 }
 

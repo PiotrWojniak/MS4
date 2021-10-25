@@ -28,3 +28,6 @@ urlpatterns = [
     path('profile', include('profiles.urls')),
     path('contact/', include('contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+handler404 = "family_craft.views.handle_no_found"
