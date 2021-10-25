@@ -46,6 +46,26 @@ body {
 .text-fc {
     color:#20321f !important;
 }
+a {
+    color: #0f8f13;;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #096b00 !important;
+    font-weight: 600;
+}
+
+a.text-danger {
+    color: #b70101!important;
+    
+}
+
+a.text-danger:hover {
+    color: #db0519!important;
+    font-weight: 600;
+}
 
 .border-black {
     border: 1px solid black !important;
@@ -98,12 +118,6 @@ p.footer-text {
     color: #F57200 !important;
     cursor: pointer;
 }
-
-a:hover {
-    text-decoration: none;
-}
-
-
 
 /* --------------- Buttons ------------- */
 
@@ -420,14 +434,14 @@ body {
 
 .notfound .notfound-404 {
     position: relative;
-    height: 200px;
-    margin: 0px auto 20px;
+    height: 50px;
+    margin: 0px auto 10px;
     z-index: -1;
 }
 
 .notfound .notfound-404 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 236px;
+    font-size: 250px;
     font-weight: 200;
     margin: 0px;
     color: #211b19;
@@ -443,9 +457,9 @@ body {
 .notfound .notfound-404 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
-    color: #211b19;
+    color: #563e37;
     background: #fff;
     padding: 10px 5px;
     margin: auto;
@@ -464,14 +478,14 @@ body {
     color: #fff;
     text-transform: uppercase;
     padding: 13px 23px;
-    background: #ff6300;
+    background: #d57538;
     font-size: 18px;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
 }
 
 .notfound a:hover {
-    color: #ff6300;
+    color: #f9b88f;
     background: #211b19;
 }
 
@@ -498,6 +512,7 @@ body {
     .footer-container {
         padding-top: 50px;
     }
+
     .form-group {
         width: 100% !important;
         align-content: center;
