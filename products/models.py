@@ -1,10 +1,12 @@
+"""Imports"""
 from django.db import models
 
 
 class Category(models.Model):
-    """ fix to adjust the spelling of categories since categorys in db """
+    """Create category model"""
 
     class Meta:
+        """ fix to adjust the spelling of categories since categorys in db """
         verbose_name_plural = 'Categories'
 
     name = models.CharField(max_length=254)
@@ -18,6 +20,8 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """Create product model"""
+
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)

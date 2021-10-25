@@ -6,6 +6,7 @@ from .models import Contact
 class ContactForm(forms.ModelForm):
     """ Form for Contact model """
     class Meta:
+        """Create meta data to display message form"""
         model = Contact
         fields = ['subject', 'name', 'email', 'message']
 

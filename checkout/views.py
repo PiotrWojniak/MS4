@@ -1,3 +1,7 @@
+"""Views imports"""
+import json
+import stripe
+
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse
 )
@@ -5,20 +9,19 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
-from .forms import OrderForm
-from .models import Order, OrderLineItem
-
 from products.models import Product
 from bag.contexts import bag_contents
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
-
-import stripe
-import json
+from .forms import OrderForm
+from .models import Order, OrderLineItem
 
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    View to retrieve the cart from the session
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -35,6 +38,9 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    View to render form, templates and process checkout via stripe
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -70,7 +76,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data['items_by_size'].items(
+                        ):
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -79,14 +86,13 @@ def checkout(request):
                             )
                             order_line_item.save()
                 except Product.DoesNotExist:
-                    messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. \
-                         Please call us for assistance!")
-                    )
+                    messages.error(
+                        request, ("One of the products in your bag wasn't found in our database. \
+                         Please call us for assistance!"))
                     order.delete()
                     return redirect(reverse('view_bag'))
 
-            # Save the info to the user's profile if all is well
+            # Save the info to the user's profile
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success',
                                     args=[order.order_number]))

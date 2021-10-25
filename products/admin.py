@@ -1,8 +1,10 @@
+"""Imports"""
 from django.contrib import admin
 from .models import Product, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    """Create diplay list for products in admin panel"""
     list_display = (
         'sku',
         'name',
@@ -17,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    """Create display list for category in admin panel"""
     list_display = (
         'friendly_name',
         'name',
