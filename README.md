@@ -13,7 +13,7 @@ The assumption of the project is to introduce a new brand to the market and sell
 
 + ## Project goals
 
-The aim of the project is to sell handmade products made by the whole family. Enable users to buy the product online with registration and without logging in, check the purchase history after registering and logging in to the website, confirmation e-mail received.
+The virus pandemic has hit everyone, especially small family businesses. Due to the decline in direct sales, the family decided to make their products available through an online store.The aim of the project is to sell handmade products made by the whole family and enable users to buy the product online as a registered user and without loggin. Allow user to check the purchase history after registering in to the website, receivie confirmation e-mail and if nesserly contact with the owner.
 
 + ## User Stories
 
@@ -125,7 +125,7 @@ The wireframe model is created as part of the project planning. Its task is to g
 
 
 
-+ ***404 Error page***
++ *** Error page***
 
 404 error page is a custom page for a non-existing domain and is present with easy navigation button back to the home page.
 
@@ -163,17 +163,26 @@ The wireframe model is created as part of the project planning. Its task is to g
 # ***Testing*** 
 <details>
    <summary>Validation</summary>
-   
-1. [**To validate Html**](https://validator.w3.org/)
-Walidated on Herroku app
-   + Warnings:
-   
-   + Error 1:
-      
-   + Error fix:
 
+   *All walidation is made on Heroku app
+1. [**To validate Html**](https://validator.w3.org/)
+
+   + Warnings:
+      1: Clousing </div> tag without opening.
+      * FIX - Remove unused tag
+   + Errors:
+       1: Bad value for sttribut href on link elemen.   
+      *Fix - Typo error - missing % at tge end.
 2. [**To validate CSS**](https://jigsaw.w3.org/css-validator/)
-   
+   <p><a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" /></a></p>
+    <p><a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" /></a></p>
+    
 3. [**To validate Js**](https://jshint.com/)
    
 4. [**To validate Python using PEP8**](
