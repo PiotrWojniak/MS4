@@ -1,12 +1,18 @@
-# 
+
+<p align="center">
+<img src="https://images89.fotosik.pl/548/0b5110f8ec8b529am.jpg">
+</p>
+
+## ***Welcome to Family Craft e-commerce store made straight from the heart***
 
 Code Institute - Milestone Project 4
 
 The assumption of the project is to introduce a new brand to the market and sell hand-made products. The user will have a choice of different product categories through interior design, clothing, and accessories. A detailed description of what material was used to make it, how it was made and the size,
 
+---
 # ***Website Showcase***
 
-<img src="https://images89.fotosik.pl/503/36a0cad341058241.jpg">
+<img src="https://images90.fotosik.pl/547/5217d7155e6bb172.jpg">
 
 ---
 # ***UX***
@@ -164,7 +170,7 @@ The wireframe model is created as part of the project planning. Its task is to g
 <details>
    <summary>Validation</summary>
 
-   *All walidation is made on Heroku app
+   *All walidation is made on Heroku app*
 1. [**To validate Html**](https://validator.w3.org/)
 
    + Warnings:
