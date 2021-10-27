@@ -34,13 +34,13 @@ ALLOWED_HOSTS = ['piotr-wojniak-fc-ms4.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django.contrib.admin',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',

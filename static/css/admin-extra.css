@@ -1,0 +1,61 @@
+:root {
+    --primary: #2C462B;
+    --secondary: #4a6849;
+
+    --primary-fc: #ffaa60;
+
+    --header-link-color: var(--primary-fc);
+    --header-bg: var(--secondary);
+
+    --breadcrumbs-fg: #f9cd7c;
+    --breadcrumbs-link-fg: var(--body-bg);
+    --breadcrumbs-bg: var(--primary);
+}
+
+#user-tools a:hover {
+    color: #f9cd7c;
+}
+
+#header {
+    background: #2C462B !important;
+}
+
+#header a:link,
+#header a:visited {
+    color: #ffaa60 !important;
+}
+
+#header a:link:hover,
+#header a:visited:hover {
+    color: #f9cd7c !important;
+}
+
+div.breadcrumbs {
+    background: #4a6849 !important;
+}
+
+.module h2, .module caption, .inline-group h2{
+    background: #ffaa60 !important;
+}
+
+a.section {
+    color: #2C462B !important;
+    font-weight: 600 !important;
+}
+
+.button, 
+input[type=submit], 
+input[type=button], 
+.submit-row input, 
+a.button {
+    background: #4a6849 !important;
+}
+
+.button:hover, 
+input[type=submit]:hover, 
+input[type=button]:hover, 
+.submit-row input:hover, 
+a.button:hover {
+    background: #ffaa60 !important;
+    color: #2C462B !important;
+}
