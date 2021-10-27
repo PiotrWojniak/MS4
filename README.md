@@ -54,42 +54,73 @@ The virus pandemic has hit everyone, especially small family businesses. Due to 
 <img src="">
 
 ### Colours
-
+In this project we deside use an Orange and Green colours. Orange It is a colorful term not only for joy, but also for fascination and determination that are buttons is style with them. Green is associated with nature and has a calming effect. As our products are mostly of natural origin, it was chosen as the background of the buttons.
+<details>
+    <summary>Palette</summary>
+    <img src="https://images90.fotosik.pl/547/b683ed423e91aa61.png">
+   
+   - Honeydew #EEFFED - background color in product card.
+   - Almond #EDDAC9 - background of all the cards and forms.
+   - Deep Saffron #FB9237 - background of hover buttons.
+   - Kombu Green #2C462B - background of footer, delivery baner.
+   - Phanthalo Green #20321F - base colour.
+</details
 
 ### Font
+   In this project i use two fonts:
+   LATO - default text on the side.
+   LOBSTER - this font is excelent maching for type of the product on the page. It's used as Brant Logo, footer, navigation bar, my account and bag.
 
 
 ### Wireframe
 The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
 
-<details>
-   <summary>Home</summary>
-   <img src="">
+<details><summary>Scratch</summary>
+   <br>
+      <details>
+         <summary>Home</summary>
+         <img src="https://images91.fotosik.pl/548/a042e7a62506fa48.png">
+      </details>   
+      <details>
+         <summary>All Products</summary>
+         <img src="https://images91.fotosik.pl/548/a1b189c9fab85de1.png">
+      </details>  
+      <details>
+         <summary>Product view</summary>
+         <img src="https://images92.fotosik.pl/549/9ed56145fe25e7ed.png">   
+      </details>
+      <details>
+         <summary>Sign in / Password reset</summary>
+         <img src="https://images90.fotosik.pl/548/ce5be83a43f90401.png">   
+      </details>
+      <details>
+         <summary>Bag</summary>
+         <img src="https://images91.fotosik.pl/548/fb52ff83d756ded3.png">
+      </details>  
+      <details>
+         <summary>Checkout</summary>
+         <img src="https://images92.fotosik.pl/549/bc1079861edd3297.png">
+      </details>  
+      <details>
+         <summary>Profile & Add product</summary>
+         <img src="https://images92.fotosik.pl/549/7e89288214340521.png">
+      </details>
+      <details>
+         <summary>Register</summary>
+         <img src="https://images90.fotosik.pl/548/254f36a493def443.png">
+      </details>
 </details>
+                    
+### Data Base schema
 <details>
-   <summary>All Products</summary>
-   <img ">
+   <summary>Scratch</summary>
+   <img src="https://images91.fotosik.pl/548/7cb05f5db4635f75med.png">
 </details>
-<details>
-   <summary>Product view</summary>
-   <img src="">
-</details>
-<details>
-   <summary>Registration/Login</summary>
-   <img src="">
-</details>
-<details>
-   <summary>Bag and Checkout</summary>
-   <img src="">
-</details>
-<details>
-   <summary>Profile</summary>
-   <img src="">
-</details>
-
+                    
 
 ### Differences between design and the end result
 
+### Wireframe update
 
 ---
 # ***Features***
@@ -178,7 +209,7 @@ The wireframe model is created as part of the project planning. Its task is to g
       * FIX - Remove unused tag
    + Errors:
        1: Bad value for sttribut href on link elemen.   
-      *Fix - Typo error - missing % at tge end.
+      *Fix - Typo error - missing % at the end.
 2. [**To validate CSS**](https://jigsaw.w3.org/css-validator/)
    <p><a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -190,18 +221,27 @@ The wireframe model is created as part of the project planning. Its task is to g
             alt="Valid CSS!" /></a></p>
     
 3. [**To validate Js**](https://jshint.com/)
+   Js was validate with out fails. Only one variable was return as undefine but its not affectink functionality of project.
+      <img src="https://images89.fotosik.pl/549/698638d91af2bc14.gif">
    
-4. [**To validate Python using PEP8**](
+4. [**To validate Python using PEP8, flake8, pylint**](http://pep8online.com/)
+   The results of the Python validation was return without errors but some of the modules return warning as: 'django.test.TestCase' imported but unused. I belive those type of the warning is not affecting functionality of my code so I decide not delete them as there be used in feature testing. I also attached a flake8_pylint_Test.txt [here](https://github.com/PiotrWojniak/MS4/blob/main/readme_files/flake8_pylint_Test.txt) file to explore of the all warnings. 
   
 </details>
 <details>
    <summary>Lighthouse</summary>
    
-   +
-   +
-   +
-   +  
-   + 
+   + Home page
+      
+      <img src="https://images91.fotosik.pl/548/89255e1b6599d95a.png">
+         
+   + Product page
+      
+      <img src="https://images89.fotosik.pl/548/29a2ba090feb2c69.png">
+         
+   + Admin panel
+      
+      <img src="https://images92.fotosik.pl/549/8c5d6c631289d47a.png">
 
 </details>
 <details>
