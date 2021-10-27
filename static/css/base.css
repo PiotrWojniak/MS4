@@ -46,25 +46,15 @@ body {
 .text-fc {
     color:#20321f !important;
 }
-a {
-    color: #0f8f13;;
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: none;
-    color: #096b00 !important;
-    font-weight: 600;
-}
-
-a.text-danger {
-    color: #b70101!important;
+/* overide default bootstrap text color class */
+.text-danger {
+    color: #a10000 !important;
     
 }
 
-a.text-danger:hover {
-    color: #db0519!important;
-    font-weight: 600;
+.text-primary {
+    color: #0053ab !important
 }
 
 .border-black {
@@ -216,6 +206,7 @@ input[name='q']::placeholder {
     font-family: Lobster;
     background: linear-gradient(to bottom, #ff7700, #144912);
     background-clip: text;
+    font-weight: 300;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -388,6 +379,11 @@ span.gradient {
     overflow-y: auto;
 }
 
+.bag-cards .card,
+.bag-cards .card-footer {
+    background: none;
+}
+
 /* Contact Form  */
 .contact-container {
     background-color: #f7e2d0;
@@ -400,7 +396,9 @@ span.gradient {
     margin: auto;
     display: block;
 }
+
 /* ----- 404, 500 error ----- */
+/* This style was used from Colorlib for 404 and 500 error template 
 *   {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -488,7 +486,7 @@ body {
 .notfound a:hover {
     color: #f9b88f;
     background: #211b19;
-}
+}*/
 
 /* -------------- Media Queries ----------------- */
 
@@ -629,7 +627,7 @@ body {
     }
 }
 
-/* ----- 404, 500 error ----- */
+/* ----- 404, 500 error ----- 
 @media only screen and (max-width: 767px) {
     .notfound .notfound-404 h1 {
         font-size: 148px;
@@ -651,7 +649,7 @@ body {
         padding: 7px 15px;
         font-size: 14px;
     }
-}
+}*/
 
 @media (max-width: 441px) {
     body {
