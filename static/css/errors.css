@@ -1,11 +1,14 @@
 /* ----- 404, 500 error ----- */
-/* This style was used from Colorlib for 404 and 500 error template */
+/* This style was used from Colorlib for 404 and 500 error template
+ and change for base style match  */
 *   {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
 
 body {
+    background: linear-gradient(rgba(48, 48, 48, 0.527),rgba(0, 0, 0, 0.5)), url('/media/craft-homemade.jpg') no-repeat center center fixed;
+    background-size: cover;
     padding: 0;
     margin: 0;
 }
@@ -42,16 +45,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 250px;
     font-weight: 400;
-    background: linear-gradient(to bottom, #ff7700, #144912);
-    background-clip: text;
     margin: 0px;
-    color: #211b19;
+    color: #fb9237;
     text-transform: uppercase;
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -62,8 +61,8 @@ body {
     font-size: 28px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #563e37;
-    background: #fff;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #ff7700, #144912);
     padding: 10px 5px;
     margin: auto;
     display: inline-block;
