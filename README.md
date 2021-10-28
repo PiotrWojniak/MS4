@@ -51,7 +51,7 @@ The virus pandemic has hit everyone, especially small family businesses. Due to 
 # ***Design***
 
 + Side map
-<img src="">
+<img src="https://images91.fotosik.pl/548/52857ed1a71eeffa.png">
 
 ### Colours
 In this project we deside use an Orange and Green colours. Orange It is a colorful term not only for joy, but also for fascination and determination that are buttons is style with them. Green is associated with nature and has a calming effect. As our products are mostly of natural origin, it was chosen as the background of the buttons.
@@ -75,7 +75,7 @@ In this project we deside use an Orange and Green colours. Orange It is a colorf
 ### Wireframe
 The wireframe model is created as part of the project planning. Its task is to graphically present the appearance of the application on three different devices: computer - high resolution, tablet - medium resolution, mobile - low resolution. The application will be built on the basis of the created sketch.
 
-<details><summary>Scratch</summary>
+<details><summary>Sketch</summary>
    <br>
       <details>
          <summary>Home</summary>
@@ -113,14 +113,54 @@ The wireframe model is created as part of the project planning. Its task is to g
                     
 ### Data Base schema
 <details>
-   <summary>Scratch</summary>
+   <summary>Sketch</summary>
    <img src="https://images91.fotosik.pl/548/7cb05f5db4635f75med.png">
 </details>
                     
 
 ### Differences between design and the end result
-
+There were a few changes to the plan during production. The background colors and card design have been changed for a cleaner look. A new option of contacting the store has also been added.
+    
 ### Wireframe update
+<details><summary>Sketch</summary>
+   <br>
+      <details>
+         <summary>Home</summary>
+         <img src="https://images92.fotosik.pl/549/4dd9db87876100f5.png">
+      </details>   
+      <details>
+         <summary>All Products</summary>
+         <img src="https://images90.fotosik.pl/548/c1ea634b211982cd.png">
+      </details>  
+      <details>
+         <summary>Product view</summary>
+         <img src="https://images89.fotosik.pl/549/4b7002ccab1e11e1.png">   
+      </details>
+      <details>
+         <summary>Sign in / Password reset</summary>
+         <img src="https://images89.fotosik.pl/549/527308ffb6e9ee6a.png">   
+      </details>
+      <details>
+         <summary>Bag</summary>
+         <img src="https://images90.fotosik.pl/548/4a3ee11349f17a43.png">
+      </details>  
+      <details>
+         <summary>Checkout</summary>
+         <img src="https://images91.fotosik.pl/548/23615ed52d8da72e.png">
+      </details>  
+      <details>
+         <summary>Profile & Add product</summary>
+         <img src="https://images90.fotosik.pl/548/98313450bde5bc78.png">
+      </details>
+      <details>
+         <summary>Register</summary>
+         <img src="https://images90.fotosik.pl/548/30db9e1e2c71cd39.png">
+      </details>
+      <details>
+         <summary>Register</summary>
+         <img src="https://images92.fotosik.pl/549/bff612878d6b0a53.png">
+      </details>
+</details>
 
 ---
 # ***Features***
@@ -128,46 +168,60 @@ The wireframe model is created as part of the project planning. Its task is to g
 ## Existing features
 
 + ***Navigation Bar***
-
+Navigation bar works as intended. When you click on the site name, you will be taken directly to the home page. When you press the home button from the drop-down menu, you'll be taken to the home page. The site has four categories, all products, clothing, household items and specials listed in the Large Appliances Center and a drop-down menu for medium and small appliances. In the upper right corner there is a login that takes the user to the page where he can log in or register.
 
 + ***Home page***
+The home page has a background image and a welcome text with a large shop now button that will automatically take the user to the product page. At the top of the page there is a logo, a search bar, product categories, an icon with login access and the total value of the basket. At the bottom there is a footer with links to social media and a form of contact with the store. It is there also knows the copyright.
 
 
++ ***All products***
+The all product's page has a bar that allows you to sort your products, and counter for all products currently displayed. In the lower right corner, is a button that allows you to return to the top of the page without scrolling through the content.
 
-+ ***Recipe page***
 
-
++ ***Bag and checkout***
+The basket is available by clicking on the bag icon. The user will be taken to the cart summary, which shows the total amount to be paid with the product value and delivery. You can update or delete a product in the cart at the same time. If everything is correct, we proceed to finalize the order. We can place an order as a logged-in user or without. We need to complete the form and make the payment. There is also adjust bag button, which will go back to the cart.    
+    
 
 + ***Log In***
-
+Access to login is available by hovering the pointer over large devices or pressing the button on medium and small my account. The user will be redirected to the login page where they can complete their data and, if they wish, they can be remembered. In addition, there are buttons for registration and password reset.
 
 
 + ***Register***
- 
+ Access to registration is possible through the same button on my account. The user will be redirected to the registration page, where he has to complete his data. Additionally, above the form and at the bottom, there is a login button if the user already has his own login.
 
 
 + ***Profile page***
+The profile tab consists of two parts. The first one contains shipping details, which we will update if necessary. The second part is your purchasing history.
 
- 
 
 + ***Edit/Delete***
-
+Editing and deleting products is strictly limited to users authorized by the store. After logging in, each card with the product has two buttons for editing and removing.
 
 
 + ***New Recipe***
- 
+To add a product, you must have the same permissions as when editing. Access to this option can be provided by the product management on my account. After selecting the option, the user will be redirected to the form with the following options:
+product categories, product number, name, description, size options, price evaluation and a picture in the form of a link or upload directly from the computer using a button.
  
 
 + ***Log out*** 
+The logout option is in my account. After clicking on logout, the user will be asked to confirm its choice or cancel and return to the home page.
+    
++ ***Contact***
+If the user needs to contact the shop, he can do it by pressing the envelope icon at the bottom of the screen. A form with a choice of query, name, email address and message will be displayed.
 
++ ***Error page***
 
+    + 404 error page is a custom page for a non-existing domain and is present with easy navigation button back to the home page.
+        <details>
+         <img src="https://images91.fotosik.pl/548/de190e2186124c3d.jpg">
+      </details>
+          
+    + 500 error page is a custom page for Internal Server Error which is a very general HTTP status code that means something has gone wrong on the web site's server.
 
-+ *** Error page***
-
-404 error page is a custom page for a non-existing domain and is present with easy navigation button back to the home page.
-
-## Features left to implement
-
+## Features nice to have
+ + ***Use a Social media login***
+ + ***Link contact form to the order number***
+ + ***Allow users to rate the product***
 ---
 # ***Technology***
 <details>
@@ -182,10 +236,10 @@ The wireframe model is created as part of the project planning. Its task is to g
    <summary>Frameworks, Libraries & Programs</summary>
    
 + <img src="https://images91.fotosik.pl/495/94f9449ae6eadb99.png"/> [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine)) - as a templates engine for Python.
-+ <img src="https://images92.fotosik.pl/496/ff9586f55010cb7e.png"> [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)) - Flask running a Python server-baced project and depends on the Jinja template engine and the Werkzeug
-+ <img src="https://images92.fotosik.pl/496/0e0b55372d3fa10f.png"> [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) - to handle various utilities for WSGI applications, it comes with simple-to-use Security features
-+ <img src="https://img.icons8.com/color/48/000000/mongodb.png"/> [mongoDB](https://en.wikipedia.org/wiki/MongoDB)  - NoSQL database used for backend database
-+ <img src="https://images90.fotosik.pl/495/31f55faa8a7f0f25.png"/> [Materialize](https://materializecss.com/) - Used for responsive design and conforming to the Google material design language. 
++ <img src="https://images92.fotosik.pl/496/ff9586f55010cb7e.png"> [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)) - 
++ <img src="https://images92.fotosik.pl/496/0e0b55372d3fa10f.png"> [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) - 
++ <img src="https://img.icons8.com/color/48/000000/mongodb.png"/> [mongoDB](https://en.wikipedia.org/wiki/MongoDB)  - 
++ <img src="https://images90.fotosik.pl/495/31f55faa8a7f0f25.png"/> [Materialize](https://materializecss.com/) -  
 + <img src="https://images91.fotosik.pl/495/ff7e331eae631581.png"> [JQuery](https://en.wikipedia.org/wiki/JQuery) - is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation
 + <img src="https://images90.fotosik.pl/496/0bfff63014e8ea32.png"> [RandomKeygen](https://randomkeygen.com/) - to generate password for flash and session function of flask
 + <img src="https://images90.fotosik.pl/496/9090f1a039521721.png"> [Heroku](https://en.wikipedia.org/wiki/Heroku) - as a deploying cloud platform to supporting several programming languages
@@ -251,18 +305,15 @@ The wireframe model is created as part of the project planning. Its task is to g
    + Chrome - no isuues
    + Safari - no issues
    + Edge - no issues
-   + Firefox - display is not smooth betwin opening and closing colapsable tabs in home page.
+   + Firefox - no issue.
 </details>
 <details>
    <summary>Errors and fix</summary>
-1. List of Ingreadients, steps and preparation not display correctly - issue fixed in commit:c84b4ed79ab12eec94c8c9b2380fc15c8d32c8c4.
-2. E125:80:5:continuation line with same indent as next logical line - For future fix.
-1. Tabbed photos do not display the same size on medium resolution - issue fixed in commit: 32f8cfc64990811335d3be529a84f8dc4f084a61. 
-3. Firefox display issue will be fixed in future
+    + No error to fix
 </details>
 <details>
    <summary>Bugs and Problems</summary>
- 3. Firefox display issue will be fixed in future.
+    + No bugs or issue 
 </details>
 
  ---
