@@ -1,0 +1,22 @@
+[28/Oct/2021 03:47:49] "POST /accounts/signup/ HTTP/1.1" 200 16819
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: [Family Craft] Please Confirm Your E-mail Address
+From: familycraft@example.com
+To: familycraft.eshop@gmail.com
+Date: Thu, 28 Oct 2021 03:49:44 -0000
+Message-ID: 
+ <163539298430.2112.16110193282921328409@ws-d5764e01-857d-45d7-b811-9aee5752cb70>
+
+Hello from Family Craft!
+
+You're receiving this e-mail because user mama has given yours as an e-mail address to connect their account.
+
+To confirm this is correct, go to http://localhost:8000/accounts/confirm-email/
+
+Thank you from Family Craft!
+familycraft.example.com
+-------------------------------------------------------------------------------
+[28/Oct/2021 03:49:44] "POST /accounts/signup/ HTTP/1.1" 302 0
+[28/Oct/2021 03:49:44] "GET /accounts/confirm-email/ HTTP/1.1" 200 15507
