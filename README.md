@@ -50,6 +50,12 @@ The virus pandemic has hit everyone, especially small family businesses. Due to 
 ---
 # ***Design***
 
++ Django Admin Panel
+
+    <details>
+       <img src="https://images90.fotosik.pl/548/007b4212f193de18med.jpg">
+    </details>  
+
 + Side map
 <img src="https://images91.fotosik.pl/548/52857ed1a71eeffa.png">
 
@@ -167,6 +173,10 @@ There were a few changes to the plan during production. The background colors an
 
 ## Existing features
 
++ App is fully responsive to all different sizes.
+    
++ Supported by Edge, Chrom, Firefox and Safari
+    
 + ***Navigation Bar***
 Navigation bar works as intended. When you click on the site name, you will be taken directly to the home page. When you press the home button from the drop-down menu, you'll be taken to the home page. The site has four categories, all products, clothing, household items and specials listed in the Large Appliances Center and a drop-down menu for medium and small appliances. In the upper right corner there is a login that takes the user to the page where he can log in or register.
 
@@ -198,7 +208,7 @@ The profile tab consists of two parts. The first one contains shipping details, 
 Editing and deleting products is strictly limited to users authorized by the store. After logging in, each card with the product has two buttons for editing and removing.
 
 
-+ ***New Recipe***
++ ***Add product***
 To add a product, you must have the same permissions as when editing. Access to this option can be provided by the product management on my account. After selecting the option, the user will be redirected to the form with the following options:
 product categories, product number, name, description, size options, price evaluation and a picture in the form of a link or upload directly from the computer using a button.
  
@@ -316,6 +326,45 @@ If the user needs to contact the shop, he can do it by pressing the envelope ico
     + No bugs or issue 
 </details>
 
+# ***Testing user story*** 
+
+<details>
+    <summary>Viewing and Navigation</summary>
+    
+1. The user selects products to view from the list available on the navigation bar.
+2. The image and the price of the product are already available on all products page. To see the exact details, click on the product image. The card contains the exact description of the product, its rating if available, size to choose from, also if available.
+3. All special offers and sales are available by selecting the special offers option from the navigation bar.
+4. The total cost of purchases will shown in the upper right corner of the application after adding product in to the bag.
+    
+    <img src="https://images91.fotosik.pl/548/77373cbe00dd664f.jpg">
+</details>
+
+<details>
+    <summary>Registration and user account</summary>
+    
+ 5. To register, click on my account icon and choose registration from the menu. After filling the form and the click sing up, info massage appear and activation link will be sent to your email. After activating the account and logging in, the delivery options with the address and telephone number as well as the history of purchase will appear in the profile.
+ 6. Criteria met above
+    [Confirmation email](https://github.com/PiotrWojniak/MS4/blob/main/readme_files/confemail.txt)
+ 7. Clicking my account and chose login. In login page fill the form and click sign in to login if password is need to reset click forget password. Then put your registration email address and click reset my password, after that email with resetting password will be sent. If you finish shopping, logout option is in my account.
+</details>
+
+<details>
+    <summary>Admin and Store Management</summary>
+  
+  8. Only authorized users can add, edit and delete products. To add a product, please select product management from my account. A new tab will open with all the information needed to add a product, such as: category, sku, name, description, whether the product contains size, price, rating and a picture as a link or uploaded from a computer. After clicking Add a product, a message will appear with the information that the product has been added. This option is available both from the store's website and from the django administration panel.
+  9. After logging in, each card with the product has two buttons for editing and removing. In edit process you can change everything, removing image and add new.
+  
+</detals>
+
+<details>
+    <summary>Sorting and searching</summary>
+    
+</detals>
+
+<details>
+    <summary>Purchasing and Checkout</summary>
+    
+</detals>
  ---
 # ***Deployment***
 
@@ -371,6 +420,6 @@ If the user needs to contact the shop, he can do it by pressing the envelope ico
 
 ---
 # ***Credits***
-1. 404 templates and CSS style was made by Colorlib (https://colorlib.com)
-2. Home background image downloaded from PxHere
+1. 404 and 500 templates and CSS style was made by Colorlib (https://colorlib.com) and updated for are own style.
+2. Home background image downloaded from PxHere.
 
