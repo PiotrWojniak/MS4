@@ -326,7 +326,7 @@ If the user needs to contact the shop, he can do it by pressing the envelope ico
 <details>
    <summary>Errors and fix</summary>
     1. Registration form for an account generated 500 error.
-        + Fix - error come from AUTH_PASSWORD_VALIDATORS - commited in:
+        + Fix - error come from AUTH_PASSWORD_VALIDATORS - commited in: 6c7026c35843858bce6e3fe0d74c3f5bd8edae7a
 </details>
 
 <details>
