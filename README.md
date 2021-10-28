@@ -224,9 +224,12 @@ If the user needs to contact the shop, he can do it by pressing the envelope ico
     + 404 error page is a custom page for a non-existing domain and is present with easy navigation button back to the home page.
         <details>
          <img src="https://images91.fotosik.pl/548/de190e2186124c3d.jpg">
-      </details>
+        </details>
           
     + 500 error page is a custom page for Internal Server Error which is a very general HTTP status code that means something has gone wrong on the web site's server.
+        <details>
+         <img src="https://images91.fotosik.pl/548/4320273817dd320b.jpg">
+        </details>
 
 ## Features nice to have
  + ***Use a Social media login***
@@ -237,27 +240,27 @@ If the user needs to contact the shop, he can do it by pressing the envelope ico
 <details>
    <summary>Languages</summary>
 
-+ <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/> [HTML](https://en.wikipedia.org/wiki/HTML) - to creating structure and layout of the webpsite.
-+ <img src="https://img.icons8.com/color/48/000000/css3.png"/> [CSS](https://en.wikipedia.org/wiki/CSS) - to styling the HTML.
-+ <img src="https://img.icons8.com/color/48/000000/javascript.png"/> [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - to interactive web applications.
-+ <img src="https://img.icons8.com/color/48/000000/python.png"/> [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - to run queries to the database.
++ [HTML](https://en.wikipedia.org/wiki/HTML) - to creating structure and layout of the webpsite.
++ [CSS](https://en.wikipedia.org/wiki/CSS) - to styling the HTML.
++ [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - to interactive web applications.
++ [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - to run queries to the database.
 </details>
 <details>
    <summary>Frameworks, Libraries & Programs</summary>
    
-+ <img src="https://images91.fotosik.pl/495/94f9449ae6eadb99.png"/> [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine)) - as a templates engine for Python.
-+ <img src="https://images92.fotosik.pl/496/ff9586f55010cb7e.png"> [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework)) - 
-+ <img src="https://images92.fotosik.pl/496/0e0b55372d3fa10f.png"> [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) - 
-+ <img src="https://img.icons8.com/color/48/000000/mongodb.png"/> [mongoDB](https://en.wikipedia.org/wiki/MongoDB)  - 
-+ <img src="https://images90.fotosik.pl/495/31f55faa8a7f0f25.png"/> [Materialize](https://materializecss.com/) -  
-+ <img src="https://images91.fotosik.pl/495/ff7e331eae631581.png"> [JQuery](https://en.wikipedia.org/wiki/JQuery) - is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation
-+ <img src="https://images90.fotosik.pl/496/0bfff63014e8ea32.png"> [RandomKeygen](https://randomkeygen.com/) - to generate password for flash and session function of flask
-+ <img src="https://images90.fotosik.pl/496/9090f1a039521721.png"> [Heroku](https://en.wikipedia.org/wiki/Heroku) - as a deploying cloud platform to supporting several programming languages
-+ <img src="https://images91.fotosik.pl/495/349a636c9586126b.png"> [GitHub](https://en.wikipedia.org/wiki/GitHub) - to create and host project
-+ <img src="https://images89.fotosik.pl/496/b2208ad81e139641.png"> [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq) - to create wireframes during design process
-+ <img src="https://images90.fotosik.pl/496/ded7f996b572ca06.png"> [Favicon](https://favicon.io/logo-generator/) - for logo generator
-+ <img src="https://images91.fotosik.pl/495/b1d4fe3fd419b9da.png"> [Google font](https://fonts.google.com/) - for font style.
-+ <img src="https://images92.fotosik.pl/496/98be9f646b97e1fa.jpg"> [Visual studio](https://visualstudio.microsoft.com) - console for writing code.
++ [Jinja](https://en.wikipedia.org/wiki/Jinja_(template_engine)) - as a templates engine for Python.
++ [Django](https://www.djangoproject.com/) - functionality of the backend.
++ [Stripe](https://stripe.com/en-ie) - for payments
++ [AWS](https://aws.amazon.com/)  - cloud based storage
++ [Chrome DevTools](https://developer.chrome.com/docs/devtools/) -  used to test and optimize the side
++ [JQuery](https://en.wikipedia.org/wiki/JQuery) - is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation
++ [RandomKeygen](https://randomkeygen.com/) - to get random secret keys
++ [Heroku](https://en.wikipedia.org/wiki/Heroku) - as a deploying cloud platform to supporting several programming languages
++ [GitHub](https://en.wikipedia.org/wiki/GitHub) - to create and host project
++ [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq) - to create wireframes during design process
++ [Favicon](https://favicon.io/logo-generator/) - for logo generator
++ [Google font](https://fonts.google.com/) - for font style.
++ [Visual studio](https://visualstudio.microsoft.com) - console for writing code.
 </details>
 
 ---
@@ -308,6 +311,7 @@ If the user needs to contact the shop, he can do it by pressing the envelope ico
       <img src="https://images92.fotosik.pl/549/8c5d6c631289d47a.png">
 
 </details>
+
 <details>
    <summary>Testing Devices and web browser</summary>
 1. App was tested at Asus laptop, Macbook pro, custom PC, Samsung Galaxy A7, Iphone XS
@@ -316,14 +320,18 @@ If the user needs to contact the shop, he can do it by pressing the envelope ico
    + Safari - no issues
    + Edge - no issues
    + Firefox - no issue.
+    
 </details>
+
 <details>
    <summary>Errors and fix</summary>
-    + No error to fix
+    1. Registration form for an account generated 500 error.
+        + Fix - error come from AUTH_PASSWORD_VALIDATORS - commited in:
 </details>
+
 <details>
    <summary>Bugs and Problems</summary>
-    + No bugs or issue 
+    + No issue
 </details>
 
 # ***Testing user story*** 
@@ -349,74 +357,191 @@ If the user needs to contact the shop, he can do it by pressing the envelope ico
 </details>
 
 <details>
-    <summary>Admin and Store Management</summary>
-  
+    <summary>Admin and Store Management</summary> 
+    
   8. Only authorized users can add, edit and delete products. To add a product, please select product management from my account. A new tab will open with all the information needed to add a product, such as: category, sku, name, description, whether the product contains size, price, rating and a picture as a link or uploaded from a computer. After clicking Add a product, a message will appear with the information that the product has been added. This option is available both from the store's website and from the django administration panel.
-  9. After logging in, each card with the product has two buttons for editing and removing. In edit process you can change everything, removing image and add new.
-  
-</detals>
+  9. After logging in, each card with the product has two buttons for editing and removing. In edit process you can change everything, removing image and add new.  
+</details>
 
 <details>
     <summary>Sorting and searching</summary>
     
-</detals>
+  10. Sorting is accessed via the Sort by ... drop-down menu on the right side of the screen. There are options by name from A-Z Z-A, price low-heigh heigh-low, categories A-Z Z-A and rating low-heigh heigh-low.
+  11. To sort all categories, select all products and then select from the drop-down menu how the products are to be sorted: By price, By category or By rating.
+  12. Product search available via the search bar in the middle. The search is carried out in all names, categories and also product descriptions. The search also displays the number of products found and their categories right under the products.
+     
+</details>
 
 <details>
     <summary>Purchasing and Checkout</summary>
     
-</detals>
+  13. When selecting the product you want to buy, it is displayed in a separate tab. There you will find all the details of the product, image, size selection (if available), and the quantity that we choose through the two buttons + or - and then click add to bag. After adding to the cart, a message will appear in the right corner confirming which product we added and the price. If this is not the product we are looking for, button keep shopping will go back to the list of products.
+  14. To check the basket, click the bag icon. In a new window, there is information on the cost of our products, the delivery price and the grand total will be displayed. If we want to add or subtract the amount of a given product, we use the + and - buttons and then click update. If we want to remove a product in the cart, click remove.
+  15. After clicking secure checkout in the cart, we will be redirected to the payment page. There you will find information that we need to fill in, such as the delivery address and name. In order to avoid a wrong choice, there is also a summary of our order, illustrating all the products we are buying at the moment. After entering the data in payment, click complete order and the payment will be successfully completed, the confirmation of our purchase will be displayed on the screen, which we will also receive in an e-mail.
+    
+    <img src="https://images91.fotosik.pl/548/c3d13385a7208134.jpg">
+    
+   16.All information that is placed on the site, including the payment, goes through the stripe. The transaction we make is encrypted and only the delivery data and what product we have purchased are readable because it is stored in the database.
+    
+    <img src="https://images89.fotosik.pl/549/2fbbbc4b48feaea6.jpg">
+    
+</details>
+
  ---
 # ***Deployment***
 
-## To create a repository:
-1. Go to the GitHub web page and login.
-2. Click Repository on the right side of the profile.
-3. Click New green button on right side.
-4. Inside Create a new repository.
-   + Choose your repository name.
-   + Choose Public that anyone can view the repository or Private and choose who can see and commit in to the repository.
-   + Choose the option in Initialize repository and add Readme, .gitignore and license if you not importing from existing repository.
-5. Click create repository button on bottom.
+<details>
+    <summary>To create a repository:</summary>
+    
+    1. Go to the GitHub web page and login.
+    2. Click Repository on the right side of the profile.
+    3. Click New green button on right side.
+    4. Inside Create a new repository.
+       + Choose your repository name.
+       + Choose Public that anyone can view the repository or Private and choose who can see and commit in to the repository.
+       + Choose the option in Initialize repository and add Readme, .gitignore and license if you not importing from existing repository.
+    5. Click create repository button on bottom.
+    
+</details>
 
-## To deploy a website on GitHub Pages, follow these steps:
-1. Go to the repository page
-2. Click on settings icon in the top of the page
-3. Find "GitHub Pages" section
-4. Click on the "Source" dropdown menu
-5. Select "master branch" option
-6. A green success message should appear in the "GitHub Pages" section with the link to the live preview of the project.
+<details>
+    <summary>To deploy a website on GitHub Pages, follow these steps:</summary>
 
-## Heroku:
+    1. Go to the repository page
+    2. Click on settings icon in the top of the page
+    3. Find "GitHub Pages" section
+    4. Click on the "Source" dropdown menu
+    5. Select "master branch" option
+    6. A green success message should appear in the "GitHub Pages" section with the link to the live preview of the project.
+</details>
 
-1.	Create an account:
-   + In the browser type: Heroku.com.
-   + Click Sing up button on the top of web page.
-   + Filling the form and click create free account.
-   + Check email box for confirmation email. If email is not received in 15min check spam folder or contact Heroku directly.
-   + From the email click the link, then create new password and click the button below for Set password and log in.
-2.	Create an application:
-   + Click Create new app.
-   + In the create new app window we need to give the unique name to the app and in the name we cannot use spaces, but instead, use hyphens. Choose a region United States or Europe and then click the Create app button.
-3.	Install Heroku 
-   + In the terminal by typing in console: npm install -g Heroku
-4. Create requirements.txt and Procfile:
-   + In the terminal by typing in console: pip3 freeze --local > requirements.txt
-   + In the terminal by typing in console: echo web: python app.py > Procfile  - the Procfile must be assigned a capital P.
-5. Go back to the Heroku web and from app klick deploy tab and select the Deployment method 'GitHub'.
-6. Under Deployment method in Connecting to GitHub make sure your profile is display correctly and then your repository name and click 'Search'.
-7. Your Repo should be display below so click 'Connect' to connect.
-8. Go to the Settings tab and on Config Vars click Reveal Config Vars 
-   + Enter variebles Key and Value contained in the env.py file:
-      - IP
-      - PORT
-      - SECRET_KEY
-      - MONGO_URI
-      - MONGO_DBNAME
- 9. Push requirements.txt and Procfile to the repository.
- 10. Go back to Heroku Deploy section and croll down to the Automatic deploys and click 'Enable Automatic Deploys'.
- 11. From Manual deploy section click 'Deploy Branch'.
-   + Heroku will now receive the code from GitHub and start building the app using the required packages.
-   + Once built the message apper 'Your app was successfully deployed' and you can click 'View' to launch your new app.
+<details>
+    <summary>Heroku:</summary>
+
+    1. Create an account:
+        + In the browser type: Heroku.com.
+        + Click Sing up button on the top of web page.
+        + Filling the form and click create free account.
+        + Check email box for confirmation email. If email is not received in 15min check spam folder or contact Heroku directly.
+        + From the email click the link, then create new password and click the button below for Set password and log in.
+    2. Create an application:
+        + Click Create new app.
+        + In the create new app window we need to give the unique name to the app and in the name we cannot use spaces, but instead, use hyphens. Choose a region United States or Europe and then click the Create app button.
+    3. Install 'dj_database_url' and 'psycopg2' via the CLI using the pip3 install prefixed to the module names
+        + pip3 install dj_database_url
+        + pip3 install psycopg2
+    4. Login to Heroku via the CLI
+        + 'heoku login -i'
+    5. Run migration on the Heroku Postgres -
+        + 'heroku run python manage.py migrate'
+    6. Create a new super user for this deployed version
+    7. Install 'gunicorn' and then freeze to your requirments.txt
+    8. Create the 'Procfile' note the capital 'P' and add :
+        + web: gunicorn your-app-name.wsgi:application
+    9. Disable Heroku from collecting static files -
+        + 'heroku config:set DISABLE_COLLECTSTATIC=1 --app your-app-name
+    10. Add the host name to your settings.py file, under ALLOWED_HOSTS
+        + ALLOWED_HOSTS = ['you-app-name.herokuapp.com', 'localhost']
+    11. To set the environment variables open the settings tab and select 'Reveal Config Vars'
+    12. Add the following variable keys and the values you have chosen :
+        + AWS_ACCESS_KEY_ID
+        + AWS_SECRET_ACCESS_KEY
+        + DATABASE_URL
+        + DISABLE_COLLECT_STATIC = 1
+        + EMAIL_HOST_PASS
+        + EMAIL_HOST_USER
+        + SECRET_KEY
+        + STRIPE_PRICE_ID
+        + STRIPE_PUBLIC_KEY
+        + STRIPE_SECRET_KEY
+        + STRIPE_WH_SECRET
+        + USE_AWS = True
+     13. Add and commit your changes in the CLI, then use the below to to deploy to Heroku :
+        + git push Heroku master
+     14. Go back to Heroku Deploy section and croll down to the Automatic deploys and click 'Enable Automatic Deploys'.
+     15. From Manual deploy section click 'Deploy Branch'.
+        + Heroku will now receive the code from GitHub and start building the app using the required packages.
+        + Once built the message apper 'Your app was successfully deployed' and you can click 'View' to launch your new app.
+</details>
+
+<details>
+    <summary>Connecting Heroku to AWS S3</summary>
+    
+      1. Install boto3 and django-storages and freeze your requirements
+      2. Add the values from the .csv you downloaded to the Heroku configvars
+      3. Delete 'DISABLE_COLLECT_STATIC = 1' from the config vars
+      4. Create a custom storage python file in your development environment with the following
+        + from django.conf import settings
+        + from storages.backends.s3boto3 import S3Boto3Storage
+        + class StaticStorage(S3Boto3Storage): location = settings.STATICFILES_LOCATION
+        + class MediaStorage(S3Boto3Storage): location = settings.MEDIAFILES_LOCATION
+      5. Deploy the app
+      6. In the S3 bucket, set up a new media folder at the same level as the tatic folder and upload any required files. Both files need to be publicly accessible.
+</details>
+
+<details>
+    <summary>AWS S3 Bucket</summary>
+    
+       1. Create your AWS account
+       2. Search for S3 and create a new bucket, select - 'allow public access'
+       3. Under Properties go to static website hosting. Select enable typle index.html as index.html and save.
+       4. In Permissions, under CORS use :
+            + [
+                {
+                    "AllowedHeaders": [
+                        "Authorization"
+                    ],
+                    "AllowedMethods": [
+                        "GET"
+                    ],
+                    "AllowedOrigins": [
+                        "*"
+                    ],
+                    "ExposeHeaders": []
+                }
+              ]
+        5. Still in permissions, select bucket policy:
+            + Generate bucket policy and copy the bucket ARN
+            + Choose S3 Bucket Policy as type of policy
+            + For Principle enter *
+            + Paste ARN copied from above
+            + Add Statement
+            + Generate Policy
+            + Copy Policy JSON Document
+            + Paste policy into Edit Bucket policy on the previous tab
+            + Save
+        6. Under Access Control List (ACL):
+            + For Everyone (public access), tick List
+            + Accept that everyone in the world may access the Bucket
+            + Save
+</details>
+
+<details>
+    <summary>AWS IAM</summary>
+    
+        1. From the IAM dashboard within AWS, select User Groups:
+            + Create a new group
+            + Click through and create group
+        2. Select Policies:
+            + Create policy
+            + Under JSON tab, click Import managed policy
+            + Set AmazongS3FullAccess
+            + Edit the resource to include the Bucket ARN noted earlier when creating the Bucket Policy
+            + Click next step and go to Review policy
+            + Give the policy a name and description of your choice
+            + Create policy
+        3. Go back to User Groups and choose the group created earlier
+            + Under Permissions > Add permissions, choose Attach Policies and select the one just created
+            + Add permissions
+        4. Under Users::
+            + Choose a user name
+            + Selecet programmatic access as the access type
+            + Click through next
+            + Add the user to the group just created
+            + Click next and creat user
+        5. Download the .csv containing the access key and secret access key.
+            + The .csv file is only available once and cannot be downloaded again
+</details>
 
 ---
 # ***Credits***
