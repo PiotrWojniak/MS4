@@ -2,10 +2,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from checkout.models import Order
 from .models import UserProfile
 from .forms import UserProfileForm
 
-from checkout.models import Order
 
 
 @login_required

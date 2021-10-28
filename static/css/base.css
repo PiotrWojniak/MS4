@@ -104,6 +104,10 @@ p.footer-text {
     margin-bottom: 0;
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
 .hover-fc:hover {
     color: #F57200 !important;
     cursor: pointer;
@@ -422,7 +426,6 @@ span.gradient {
     }
 
     .form-group {
-        width: 100% !important;
         align-content: center;
     }
 }
